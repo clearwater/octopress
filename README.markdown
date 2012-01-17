@@ -1,4 +1,4 @@
-## Branching A New Project Repo
+## Branching Octopress for a New Project Blog
 
 1.  git checkout master
 2.  git checkout -b project-name
