@@ -2,10 +2,10 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/chumby-oe/"
+http_images_path = "/chumby-oe/images"
+http_fonts_path = "/chumby-oe/fonts"
+css_dir = "public/chumby-oe/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
