@@ -1,4 +1,4 @@
-## Branching Octopress for a New Project Blog
+## Branching Octopress for a New Github Project Blog
 
 1.  git checkout master
 2.  git checkout -b project-name
