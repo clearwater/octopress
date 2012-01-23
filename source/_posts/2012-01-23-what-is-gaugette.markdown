@@ -22,9 +22,12 @@ After playing with the
 [motor shield party pack](http://www.adafruit.com/products/171) from Adafruit,
 I started thinking it would be fun to have a couple of analog gauges
 mounted on the wall somewhere to show system health indication; maybe network bandwidth or
-web traffic?  Of course I've seen the very beautiful 
+web traffic? 
+<img alt="TorrentMeter by Skytee" title="TorrentMeter" src="http://blog.skytee.com/wp-content/uploads/2010/11/B-300x277.jpg" align="right">
+Of course I've seen the very beautiful 
 [TorrentMeter by Skytee](http://blog.skytee.com/2010/11/torrentmeter-a-steampunk-bandwidth-meter/)
-which just makes me weep, but I don't have a beautiful brass antique voltmeter to go that route.
+which is so pretty it makes me weep, but beautiful brass antique voltmeters are in short supply 
+around here.
 
 The servos and steppers in the Adafruit pack aren't ideal for driving gauges.  The little stepper they 
 include runs really hot.  The servo seemed
