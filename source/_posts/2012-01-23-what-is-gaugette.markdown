@@ -58,8 +58,7 @@ where he sees the first signs of success.  What happens next?  Blue smoke?
 
 At the price I figured it was worth a shot driving these directly, 
 so I ordered 6 from  [one of many](http://stores.ebay.com.au/partsangel)
-ebay stores selling them.  
-Apparently a complete GM instrument cluster has 6 motors, so 6 is a popular quantity.
+ebay stores selling them.  Apparently a complete GM instrument cluster has 6 motors, so 6 is a popular quantity.
 In all it cost about $25 including postage from the US to Australia.
 At the time of writing they carry both the X25.168
 with rear contacts, and the X25.589 with front contacts and a longer indicator shaft.
