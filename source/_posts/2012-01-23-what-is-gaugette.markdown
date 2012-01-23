@@ -22,7 +22,7 @@ After playing with the
 [motor shield party pack](http://www.adafruit.com/products/171) from Adafruit,
 I started thinking it would be fun to have a couple of analog gauges
 mounted on the wall somewhere to show system health indication; maybe network bandwidth or
-web traffice?  Of course I've seen the very beautiful 
+web traffic?  Of course I've seen the very beautiful 
 [TorrentMeter by Skytee](http://blog.skytee.com/2010/11/torrentmeter-a-steampunk-bandwidth-meter/)
 which just makes me weep, but I don't have a beautiful brass antique voltmeter to go that route.
 
