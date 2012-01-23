@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://clearwater.github.com/gaugette
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Gaugette
+subtitle: A simple and cheap arduino-based analog gauge.
+author: Guy
 simple_search: http://google.com/search
 description:
 

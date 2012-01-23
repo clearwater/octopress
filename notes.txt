@@ -1,0 +1,11 @@
+Create a new post
+    rake new_post[title-here]
+
+Running a local preview (generates automatically)
+    rake preview
+
+Publishing
+    rake generate
+    rake deploy
+
+
