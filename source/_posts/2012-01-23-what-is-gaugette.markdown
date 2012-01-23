@@ -34,7 +34,7 @@ But it is quite bulky and noisy, so I started looking for something better.
 The Switec X25 Stepper Motor
 ----------------------------
 
-<img alt="Switec X26.168 Stepper Motor" src="/images/Switec_X25_168.jpg" align="right">
+<img alt="Switec X26.168 Stepper Motor" src="/resources/Switec_X25_168.jpg" align="right">
 I noticed a lot of sellers on ebay selling tiny Switec X25
 motors as replacements for GM auto instrument clusters.  They were developed 
 by the technology arm of Swatch, so I figured they should be low power and
