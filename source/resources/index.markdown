@@ -24,3 +24,5 @@ MCR Motor MR1107/MR1108
 -----------------------
  - [MCR Motor MR1107/MR1108 Data Sheet](/resources/mcr/2010410104720473.pdf)
  - [MCR Motor Mechanical Drawings](/resources/mcr/2009212115216347.pdf)
+ - [MCR PWM Driving Mode](/resources/mcr/201041010510949.pdf)
+ - [MCR Acceleration Curve](/resources/mcr/2010410104915847.pdf)
