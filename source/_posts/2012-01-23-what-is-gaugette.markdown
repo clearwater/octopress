@@ -45,7 +45,7 @@ pretty quiet.  Certainly they are cheap; under $5 each!
 
 The X25 motors have 6 steps per revolution, and a 180:1 gearbox, giving a
 resolution of 1/3 degree.
-The [spec sheet](X25_xxx_01_SP_E-1.pdf)
+The [data sheet](/resources/switec/X25_xxx_01_SP_E-1.pdf)
 indicates they draw no more than 20mA per winding, which is low enough to source directly from the 5V
 Arduno data pins, raising the possibility of driving these without an intermediate controller chip. Yes, I 
 understand the risks associated with wiring inductive loads directly to the microcontroller.  Arduinos are
@@ -65,7 +65,7 @@ ebay stores selling them.  Apparently a complete GM instrument cluster has 6 mot
 In all it cost about $25 including postage from the US to Australia.
 At the time of writing they carry both the X25.168
 with rear contacts, and the X25.589 with front contacts and a longer indicator shaft.
-Both have internal stops.  See the [buyers guide](/resources/ISM_Buyers_Guide.pdf) for details
+Both have internal stops.  See the [buyers guide](/resources/switec/ISM_Buyers_Guide.pdf) for details
 on the different models.
 
 
