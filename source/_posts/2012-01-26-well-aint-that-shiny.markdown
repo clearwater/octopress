@@ -10,7 +10,7 @@ I've been looking around on-line and in stores for some parts to
 make some classy steam-punk gauges.
 After a lot of searching I came 
 across [Lets Make Time](http://www.letsmaketime.com.au)
-here in Australia who carry quite clock and weather station
+here in Australia who carry clock and weather station
 parts at very reasonable prices.
 It's always hard to gauge build quality from pictures, so I laid 
 down some cash and bought a grab bag of stuff.
