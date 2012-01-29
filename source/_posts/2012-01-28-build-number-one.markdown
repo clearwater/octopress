@@ -10,26 +10,26 @@ categories:
 This weekend I opened up one of the cheap-but-funky thermometers/hydrometers
 from [Lets Make Time](http://www.letsmaketime.com.au)
 and replaced the thermometer mechanism with the 
-Aruidno-controlled Switec X25.168 stepper.  
+Arduino-controlled Switec X25.168 stepper.  
 
 <img src="/resources/thermo_back.jpg" align="right" alt="back removed"/>
 The thermometer and hydrometer are installed
 in identical one-part plastic housings with no screws
 or seams, so it wasn't clear how to crack them open.
-I used a dremel to cut away the back panel giving access to the
-themometer mechanism, but to my surprise the dial face was still firmly
+I used a Dremel to cut away the back panel giving access to the
+thermometer mechanism, but to my surprise the dial face was still firmly
 locked in place.  After a bit
 of poking around I discovered that I could push the whole assembly out
 forward - in fact the plastic lens is only held in by friction, and 
 the dial and mechanism are held in by the lens.  No cutting was
 required.  #LFMF
 
-<img src="/resources/thermo_disassembly.jpg" align="left" alt="themometer disassembly"/>
+<img src="/resources/thermo_disassembly.jpg" align="left" alt="thermometer disassembly"/>
 This turned out to be important because after careful measurement I realized
 that the motor would have to be mounted snugly against the the back of the housing to
 leave the drive shaft protruding enough to attach a needle.  The plastic panel I cut away
 would have been ideal to screw the motor to.
-Starting again with an undamaged housing, I gently pryed out the plastic lens, removed the face and mechanism.
+Starting again with an undamaged housing, I gently pried out the plastic lens, removed the face and mechanism.
 This time I only cut away enough plastic on the back to allow the drive shaft to pass through.
 
 <img src="/resources/thermo_mount.jpg" align="right" alt="mechanism removal"/>

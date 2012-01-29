@@ -10,7 +10,7 @@ Last night I built a pair of improved wiring harnesses so I could
 connect two motors to the Arduino.  Once concern
 I have is that the control logic that manages the acceleration and
 deceleration could be so slow that it will interfere with the motor
-drive signalling when trying to control more than one motor.  I have in mind to replace the
+drive signaling when trying to control more than one motor.  I have in mind to replace the
 floating point logic with a lookup table, but for now I like being
 able to easily fiddle with the motion parameters.
 

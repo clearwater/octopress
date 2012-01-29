@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Well Aint That Shiny!"
+title: "Well Ain't That Shiny!"
 date: 2012-01-26 11:03
 comments: true
 categories: 

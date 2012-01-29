@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 <img alt="Switec Clones" src="/resources/X25_clone.png" align="right">
-When my ebay Switec X25.168 motors arrived, they didn't look at all like
+When my eBay Switec X25.168 motors arrived, they didn't look at all like
 the white motors with the "Switec" branding that I see in all of the pictures
 online.  I finally got around to tracking down what exactly they are.
 They have two identification numbers printed black on black:
@@ -24,9 +24,9 @@ I turned up what appears to be a third manufacturer, [MCR Motor](http://www.mcrm
 call this motor the MR1108.  The MCR [data sheet](/resources/mcr/2010410104720473.pdf)
 lists the Switec and VID motors as alternatives.
 
-The ebay seller had these marked unabiguously as Switec motors in their auction.  Maybe VID
-and MCR have licensed the technology from Switec Juken, or maybe VID and MCR are
-just ripping off the designs?
+The eBay seller had these marked unambiguously as X25.168 motors in their auction, but didn't
+specifically say they were from Switec.  I wonder if any of the eBay offers are actual Switec motors?
+
 
 
 

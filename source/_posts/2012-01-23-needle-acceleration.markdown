@@ -8,7 +8,7 @@ categories:
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/uNLySm71OBc" frameborder="0" allowfullscreen></iframe>
 
-My first cut at the [SwitecX25 library](https://github.com/clearwater/gaugette)
+My first cut at the [Switec X25 library](https://github.com/clearwater/gaugette)
 stepped the needle at a constant speed.  You can see the constant speed
 motion in the [original video](http://www.youtube.com/watch?v=vwAxRk_5oXA).
 
@@ -18,11 +18,11 @@ I should be able to reach faster peak speeds by ramping the speed up.  Motion is
 now specified by 4 parameters: minimum speed, maximum speed, acceleration, deceleration.
 
 For now I've used floating point calculations to compute each step period
-standard newtonian velocity/distance/time
+standard Newtonian velocity/distance/time
 calculations.  This works okay, but is unnecessarily compute-intensive.
 
-The SwitecX25 library supports multiple motors
-and no doubt this compuation will become a factor when I try to drive more than
+The Switec X25 library supports multiple motors
+and no doubt this computation will become a factor when I try to drive more than
 one motor, so I'll have to address that at some point. 
 
 One interesting aspect of the control logic is that the calculations are done at the start
