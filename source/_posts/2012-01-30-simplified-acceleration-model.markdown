@@ -6,13 +6,13 @@ comments: true
 categories: 
 ---
 The logic in the ```advance()``` function of the 
-[Switec X25 library]((https://github.com/clearwater/gaugette)
+[Switec X25 library](https://github.com/clearwater/gaugette)
 steps the motor forward or backward one step, then computes the delay in 
 microseconds until the next step is due.  This logic determines the acceleration curve and 
 maximum speed of the needle.  My first cut at this
 code used floating point arithmetic to model this as time/accel/velocity problem.  The
 motion was nice and smooth, but it was overkill, and consumes too many precious Arduino
-compute cycles.  When driving multiple motors, I expect this to create an artificial ceiling on the
+compute cycles.  When driving multiple motors, this will create an artificial ceiling on the
 maximum motor speed.
 
 I've rewritten that logic to use a simple lookup table instead.
@@ -32,26 +32,37 @@ The acceleration curve is defined as pairs of vel,delay values:
 };
 </code></pre>
 
-The values in the first column are the number of steps
-traveled under acceleration which is essentially a surrogate for velocity.
-We maintain a variable ```vel``` that increments 
-each step under acceleration, and decreases each step under deceleration.
+We maintain a variable ```vel``` (which isn't actually velocity,
+but is a surrogate for velocity) that increments 
+each step under acceleration, and decrements each step under deceleration.
+When stationary, ```vel``` is zero.  After 1 step of acceleration it is 1.
 For simplicity I've made the acceleration and deceleration curves identical
 so they can share the same lookup table.
 
-Now to determine the step delay at any given value of ```vel```, we find 
+To determine the inter-step delay at any given value of ```vel```, we find 
 the first table entry such that ```accelTable[i][0] < vel```.  In practice this means that the
-motor will step at 5000&micro;S intervals for 10 steps, then 1500&micro;S 
-steps for the next 20 steps, 1000&micro;S for the next 70 steps, and so on.
-The peak speed with a delay of 600&micro;S correlates to 1666Hz step rate
+motor will step at 5000 &micro;S intervals for 9 steps, then 1500 &micro;S 
+steps for the next 20 steps, 1000 &micro;S for the next 70 steps, and so on.
+The peak speed with a delay of 600 &micro;S equates to 1666 Hz step rate
 or about 500 degrees per second.
 
-The acceleration table values are constrained by the 
-the inertia of the needle attached to the motor.  The VID 29 data sheet
+The motion control logic first determines if the motor is subject to acceleration,
+at full speed, or deceleration and adjusts ```vel``` accordingly.  Using 
+steps as the unit for ```vel``` makes it very
+easy to determine when to declerate: when ```vel``` is greater than or equal to the number of steps
+to reach our destination, we need to start decelerating.
+
+The new logic also ensures that if the motor is moving at
+speed in one direction and is directed to a new position in the opposite direction it will
+decelerate to a stop before accelerating in the opposite direction.
+
+The constants that make up the acceleration table are constrained by the 
+the inertia of the needle attached to the motor.  The 
+[VID 29 documentation](/resources/vid/2009111395111_Acceleration_&_reset_calculation_example.pdf)
 gives some recommendations for calculating these values, but I actually
-didn't use them for the values I'm using - I experimented until I found
-found values that work and look nice to me.
+didn't use that.  I experimented until I 
+found values that were within operational limits and look nice to me.
 
 I tested this code driving 3 motors simultaneously with an Arduino Uno.
-It looks good.  New code is in the [library on Github](https://github.com/clearwater/gaugette).
+All good.  New code is in the [library on Github](https://github.com/clearwater/gaugette).
 
