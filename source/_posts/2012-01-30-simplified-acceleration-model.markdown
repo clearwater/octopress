@@ -5,13 +5,14 @@ date: 2012-01-26 09:42
 comments: true
 categories: 
 ---
-The logic in the advance() function of the Switec X25 library
-steps the motor one step up or down, and computes the delay in 
-microseconds until the next step.  This logic determines the acceleration,
-deceleration and maximum speed of the needle.  My first cut at this
-code used floating point arithmetic to simulate Newtonian physics.  It's
-overkill, and consumes too many precious Arduino compute cycles.  When
-driving multiple motors, this could create an artificial ceiling on the
+The logic in the ```advance()``` function of the 
+[Switec X25 library]((https://github.com/clearwater/gaugette)
+steps the motor forward or backward one step, then computes the delay in 
+microseconds until the next step is due.  This logic determines the acceleration curve and 
+maximum speed of the needle.  My first cut at this
+code used floating point arithmetic to model this as time/accel/velocity problem.  The
+motion was nice and smooth, but it was overkill, and consumes too many precious Arduino
+compute cycles.  When driving multiple motors, I expect this to create an artificial ceiling on the
 maximum motor speed.
 
 I've rewritten that logic to use a simple lookup table instead.
@@ -51,6 +52,6 @@ gives some recommendations for calculating these values, but I actually
 didn't use them for the values I'm using - I experimented until I found
 found values that work and look nice to me.
 
-The [library on Github](https://github.com/clearwater/gaugette) now contains
-the updated logic.
+I tested this code driving 3 motors simultaneously with an Arduino Uno.
+It looks good.  New code is in the [library on Github](https://github.com/clearwater/gaugette).
 
