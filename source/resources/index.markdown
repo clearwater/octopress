@@ -6,6 +6,11 @@ comments: true
 sharing: true
 footer: true
 ---
+Source Code
+-----------
+ - [SwitecX25 Driver Library for Arduino](https://github.com/clearwater/SwitecX25)
+ - [Gaugette Source for Arduino](https://github.com/clearwater/gaugette)
+
 Switec X25 Series Stepper Motors
 --------------------------------
  - [Switec X25 Series Data Sheet](/resources/switec/X25_xxx_01_SP_E-1.pdf)
