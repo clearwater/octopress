@@ -11,7 +11,8 @@ I made dial faces for a couple of the square gauges built
 in [Build Number One](/blog/2012/01/28/build-number-one/).  Nearly
 ready to install these guys.  
 
-I wrote a ruby script to generate the line-work for the dial face.
+I wrote a ruby script to generate the line-work for the dial face
+so I could position the lines precisely.
 I started with the gd2 bindings, but gd2 doesn't
 seem to support anti-aliasing or linecaps and the linework
 was pretty ugly.  I switched to Cairo which did a much nicer 
