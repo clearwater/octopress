@@ -5,7 +5,7 @@ date: 2012-01-19 17:10
 comments: true
 categories: 
 ---
-<img alt="Switec X26.168 Stepper Motor" src="/resources/X12_Quad_Driver.png" align="right">
+{% img right /resources/X12_Quad_Driver.png Switec X12.017 Quad Driver %}
 The [X25 data sheet](/resources/switec/X25_xxx_01_SP_E-1.pdf)
 describes the X12 family of driver chips which allow
 up to 4 Switec motors to be controlled over a 3-wire serial interface.

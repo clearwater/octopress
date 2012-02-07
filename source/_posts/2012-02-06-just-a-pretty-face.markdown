@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-<img src="/resources/100k_square_dial.png" alt="Dial Face Artwork" align="right"/>
+{% img right /resources/100k_square_dial.png Dial Face Artwork %}
 I made dial faces for a couple of the square gauges built
 in [Build Number One](/blog/2012/01/28/build-number-one/).  Nearly
 ready to install these guys.  
@@ -34,7 +34,7 @@ drive shaft length to place the paper over the original dial plate
 so that the needle just clears the face.  I might have to glue the paper down to
 keep to completely flat.
 
-<img src="/resources/fiskars_hole_punch.png" alt="Fiskars Hole Punch" align="left"/>
+{% img left /resources/fiskars_hole_punch.png Fiskars Hole Punch %}
 One thing that had me stuffed is how to punch a neat hole in the paper for
 the drive shaft.  A standard hole-punch is too big and can't reach 
 far enough from the edge of the paper.  Drilling would leave messy edges.  Scouring
@@ -43,7 +43,7 @@ the aisles at OfficeWorks I found a
 size is 3.2mm (1/8").  The downside is the set of 3 cost about $25.  Anyway they work a treat and now 
 I have some crafty hole punches.
 
-<img src="/resources/finished_square_face.png" alt="Custom Dial Face" align="right"/>
+{% img right /resources/finished_square_face.png Custom Dial Face %}
 I tried printing the dials with an ink-jet.  That
 seemed okay until I mounted it in the gauge and I found
 that at certain angles the metallic finish

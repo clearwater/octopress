@@ -5,7 +5,7 @@ date: 2012-01-26 11:03
 comments: true
 categories: 
 ---
-<img src="/resources/shiny_things.jpg" alt="Shiny Things" align="right"/>
+{% img right /resources/shiny_things.jpg Pretty Shiny Things %}
 I've been looking around on-line and in stores for some parts to 
 make some classy steam-punk gauges.
 After a lot of searching I came 

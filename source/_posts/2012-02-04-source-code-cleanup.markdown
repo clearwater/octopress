@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Source Code Cleanup"
+title: "Separation Anxiety"
 date: 2012-02-04 11:38
 comments: true
 categories: 
 ---
-<img src="/resources/dial_parts.png" align="right" alt="Separation"/>
+{% img right /resources/dial_parts.png Separation Anxiety %}
 I've separated the Switec X25 motor driver code into a separate
 library repository on GitHub.  This will make it easier to use
 the driver library in other applications.
