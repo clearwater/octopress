@@ -7,13 +7,13 @@ categories:
 ---
 
 <img src="/resources/thermo_original.jpg" align="left" alt="$5 Hygrometer"/>
-This weekend I opened up one of the cheap-but-funky thermometers/hydrometers
+This weekend I opened up one of the cheap-but-funky thermometers/hygrometers
 from [Lets Make Time](http://www.letsmaketime.com.au)
 and replaced the thermometer mechanism with the 
 Arduino-controlled Switec X25.168 stepper.  
 
 <img src="/resources/thermo_back.jpg" align="right" alt="back removed"/>
-The thermometer and hydrometer are installed
+The thermometer and hygrometer are installed
 in identical one-part plastic housings with no screws
 or seams, so it wasn't clear how to crack them open.
 I used a Dremel to cut away the back panel giving access to the
