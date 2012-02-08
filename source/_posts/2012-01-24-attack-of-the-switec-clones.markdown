@@ -7,7 +7,7 @@ categories:
 ---
 {% img right /resources/X25_clone.png Switec Clones %}
 When my eBay Switec X25.168 motors arrived, they didn't look at all like
-the white motors with the "Switec" branding that I see in all of the pictures
+the white motors with the "Switec" branding that I've been seeing
 online.  I finally got around to tracking down what exactly they are.
 They have two identification numbers printed black on black:
 ``vid29-02p`` and ``d11455db``.

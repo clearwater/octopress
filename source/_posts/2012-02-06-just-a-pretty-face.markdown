@@ -20,7 +20,7 @@ a graphics tool.
 My first attempt at the script used the GD2 library, but [GD2](http://gd2.rubyforge.org/rdoc/)
 doesn't seem to support anti-aliasing or line-caps and the resulting line-work
 was just too damned ugly.  I switched to [Cairo](http://rubyforge.org/projects/cairo/) which makes pretty, pretty lines.
-A revelation at this point was that I could use Cairo's clipping operator to trim the graticule lines instead of doing lots of trig to figure out line 
+A revelation at this point was that I could use Cairo's clipping operator to trim the graticule lines and remove the messy trig I was coding to figure out line 
 intersections and stroke lengths.  Finally I imported the generated image into 
 OpenOffice to add the text labels.
 
@@ -30,7 +30,7 @@ I did find some 120 gsm paper (Quill brand "Metallique"
 in Mother of Pearl) with a cool metallic / opalesque finish.
 120 gsm is heavier than standard typing paper, and maybe barely stiff 
 enough to support itself in the gauge.  Over time it might curl
-or slump in the varying humidity here in the tropics.  
+or slump in the varying humidity here in the tropics. 
 There is just enough drive shaft length to place the paper
 over the original dial plate so that the needle just clears
 the face, but if the paper will support itself I could 
@@ -56,6 +56,6 @@ After installing the new face I calibrated it carefully and found
 a discrepancy between the printed face and needle position that I can't
 explain.  If I line up zero precisely, then at full-scale (230 degrees 
 sweep) I find the needle is about 2 degrees short of the 100% mark on
-the dial.  I'm not sure what the source of error is (I have a few suspects), but it is easily
+the dial.  I'm not sure what the source of error is - presumably just measurement and positioning errors -  but it is easily
 solved by changing the stepper motor sweep from 690 steps to 696 steps
 to full-scale deflection.

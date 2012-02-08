@@ -6,14 +6,16 @@ comments: true
 categories: Arduino Switec x25
 ---
 
-Gaugette is an Arduino library for controlling Switec X25.168 stepper motors
-directly from the Arduino data IO lines.  Each motor requires 4 digital IO pins,
-and a single Arduino can drive multiple motors.
+Gaugette is a project detailing the construction of custom analog gauges using
+an Arduino microcontroller and Switec X25.168 stepper motors. 
+Each motor requires 4 digital I/O pins,
+and a single Arduino can drive three motors.  The limit
+is purely due to Aruidno limit of 14 digital I/O lines.
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/Z-f4m18n48I" frameborder="0" allowfullscreen></iframe>
 
-The source code for the library, and some sample client code is available from the
-[GitHub repository](https://github.com/clearwater/gaugette).
+Source code for the project is available on 
+[GitHub](https://github.com/clearwater/gaugette).
 
 Motivation
 ----------

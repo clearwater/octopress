@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 The logic in the ```advance()``` function of the 
-[Switec X25 library](https://github.com/clearwater/gaugette)
+[Switec X25 library](https://github.com/clearwater/SwitecX25)
 steps the motor forward or backward one step, then computes the delay in 
 microseconds until the next step is due.  This logic determines the acceleration curve and 
 maximum speed of the needle.  My first cut at this
@@ -64,5 +64,5 @@ didn't use that.  I experimented until I
 found values that were within operational limits and look nice to me.
 
 I tested this code driving 3 motors simultaneously with an Arduino Uno.
-All good.  New code is in the [library on Github](https://github.com/clearwater/gaugette).
+All good.  New code is in the [library on Github](https://github.com/clearwater/SwitecX25).
 
