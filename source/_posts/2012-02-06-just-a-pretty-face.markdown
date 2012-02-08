@@ -19,26 +19,28 @@ a graphics tool.
 
 My first attempt at the script used the GD2 library, but [GD2](http://gd2.rubyforge.org/rdoc/)
 doesn't seem to support anti-aliasing or line-caps and the resulting line-work
-was just too ugly.  I switched to [Cairo](http://rubyforge.org/projects/cairo/) which makes pretty, pretty lines.
+was just too damned ugly.  I switched to [Cairo](http://rubyforge.org/projects/cairo/) which makes pretty, pretty lines.
 A revelation at this point was that I could use Cairo's clipping operator to trim the graticule lines instead of doing lots of trig to figure out line 
 intersections and stroke lengths.  Finally I imported the generated image into 
 OpenOffice to add the text labels.
 
-So what to print on?  On a recent trip to Cairns I looked in OfficeWorks
-for something suitable.  I didn't find any card stock I liked, but
-I did find some 120 gsm paper (Quill brand "Metallique" in Mother of Pearl) with a cool metallic / opalesque finish.
-120 gsm is heavier than standard typing paper, but really not really stiff 
-enough to support itself in the gauge - especially here in the tropics
-where humidity makes paper curl and slump.  There is just enough
-drive shaft length to place the paper over the original dial plate
-so that the needle just clears the face.  I might have to glue the paper down to
-keep to completely flat.
+So what to print on?  On a recent trip to Cairns I looked in Officeworks
+for ideas.  I didn't find any card stock I liked, but
+I did find some 120 gsm paper (Quill brand "Metallique"
+in Mother of Pearl) with a cool metallic / opalesque finish.
+120 gsm is heavier than standard typing paper, and maybe barely stiff 
+enough to support itself in the gauge.  Over time it might curl
+or slump in the varying humidity here in the tropics.  
+There is just enough drive shaft length to place the paper
+over the original dial plate so that the needle just clears
+the face, but if the paper will support itself I could 
+backlight it with an LED which might look nice in the dark.
 
 {% img left /resources/fiskars_hole_punch.png Fiskars Hole Punch %}
 One thing that had me stuffed is how to punch a neat hole in the paper for
 the drive shaft.  A standard hole-punch is too big and can't reach 
 far enough from the edge of the paper.  Drilling would leave messy edges.  Scouring
-the aisles at OfficeWorks I found a 
+the aisles at Officeworks I found a 
 [set of three eyelet setters](http://www.fiskarscraft.eu/Products/Craft/Punches/Eyelet-Setter/Eyelet-Setter-Pack) from Fiskars in the scrap-booking section.  The hole punches use a crazy spring-driven hammer mechanism, so you can position them anywhere on the page, pull back the hammer, and smack, you have a hole.  I was reckon I want a 3mm hole, and the middle
 size is 3.2mm (1/8").  The downside is the set of 3 cost about $25.  Anyway they work a treat and now 
 I have some crafty hole punches.
