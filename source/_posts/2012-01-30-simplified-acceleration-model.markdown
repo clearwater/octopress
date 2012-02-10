@@ -52,6 +52,7 @@ steps as the unit for ```vel``` makes it very
 easy to determine when to declerate: when ```vel``` is greater than or equal to the number of steps
 to reach our destination, we need to start decelerating.
 
+{% img right /resources/VID29_accel.png From the VID29 Tech Note %}
 The new logic also ensures that if the motor is moving at
 speed in one direction and is directed to a new position in the opposite direction it will
 decelerate to a stop before accelerating in the opposite direction.
