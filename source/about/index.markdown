@@ -10,7 +10,7 @@ footer: true
 What is Gaugette?
 -----------------
 
-{% img right /resources/finished_square_face.png Custom Dial Face %}
+{% img right /resources/thermo_backlit.png LED Backlighting %}
 Gaugette is a project detailing the construction of custom analog gauges using
 an Arduino microcontroller and Switec X25 stepper motors.
 
