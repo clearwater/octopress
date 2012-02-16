@@ -37,6 +37,6 @@ to ground.  I recently added LED control options to the Gaugette software
 to control the brightness.
 
 {% img right http://www.battlecruiserzone.com/Boom1.jpg %}
-Don't you think this gauge is starting to look like the
+ZOMG, now this gauge [totally looks like](http://totallylookslike.icanhascheezburger.com/) the
 helmets worn by the Viper pilots in the original 80's
-Battlestar Galactica series?
+Battlestar Galactica series!
