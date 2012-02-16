@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://clearwater.github.com/chumby-oe
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: OpenEmbedded for the Chumby
+subtitle: Resources for running OpenEmbedded on the Chumby Hackers Board
+author: Guy
 simple_search: http://google.com/search
 description:
 
