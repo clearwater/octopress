@@ -39,5 +39,7 @@ Unmount of all volumes on disk0 was successful
 
 Copy the ROM image to the SD as follows:
 ```
-sudo dd if=rom-chumby-silvermoon-chumby-starter-image.img of=/dev/disk0 bs=8m
+sudo dd if=rom-chumby-falconwing-chumby-starter-image.img of=/dev/disk0 bs=8m
 ```
+
+Be patient, this takes a while... like 6 and a half minutes in my case.  Perhaps you would like to amuse youself by looking at [pictures of cats](http://squee.icanhascheezburger.com/)?
