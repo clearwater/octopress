@@ -5,3 +5,9 @@ header[role="banner"] {
      background-repeat: no-repeat;
      background-position: right bottom;
 }
+
+article {
+  ol, ul {
+    padding-left: 3em;
+  }
+}
