@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-The CHB has an on-board Freescale MMA7455L 3-axis accelerometer, [datasheet here](www.freescale.com/files/sensors/doc/data_sheet/MMA7455L.pdf), which can be accessed over the [I²C](http://en.wikipedia.org/wiki/I2C) bus.
+The CHB has an on-board Freescale MMA7455L 3-axis accelerometer, [datasheet here](http://www.freescale.com/files/sensors/doc/data_sheet/MMA7455L.pdf), which can be accessed over the [I²C](http://en.wikipedia.org/wiki/I2C) bus.
 Not long after the Chumby Hackers Board was released
 Adafruit published [a tutorial](http://www.ladyada.net/learn/chumby/i2c.html)
 explaining how to access the accelerometer over i2c.
