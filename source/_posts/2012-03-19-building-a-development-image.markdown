@@ -38,15 +38,18 @@ The standard "chumby-starter-image" we've been building with the OE toolchain do
 
 I have a feeling most people will probably prefer this image over the old chumby-starter-image, so I've made chumby-dev-image the default make target.  You can change the default target by modifying this line in the Makefile: ```export CHUMBY_IMAGE:=chumby-dev-image```.
 
-Errata
-------
+And Another Thing
+-----------------
 
-There seems to be an issue with library soft-links on this build.  If you see an error like this:
+It turns out that we also need to add libgcc-dev to the list of packages.  Without it ```libgcc_s.so``` will not be created and you will see errors like this when you compile:
 ```
 /usr/lib/gcc/arm-angstrom-linux-gnueabi/4.5.3/../../../../arm-angstrom-linux-gnueabi/bin/ld: cannot find -lgcc_s
 collect2: ld returned 1 exit status
 ```
-you need to create a soft link as follows:
+By adding the libgcc-dev package, we get ```/usr/lib/libgcc_s.so```, which interestingly is an ld script file with the following contents:
 ```
-ln -s /lib/libgcc_s.so.1 /lib/libgcc_s.so
+/* GNU ld script
+   Use the shared library, but some functions are only in
+   the static library.  */
+GROUP ( libgcc_s.so.1 libgcc.a )
 ```

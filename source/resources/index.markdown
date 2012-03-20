@@ -6,6 +6,11 @@ comments: true
 sharing: true
 footer: true
 ---
+
+Community
+---------
+ - [Chumby Forum](http://forum.chumby.com/viewforum.php?id=20)
+
 Data Sheets
 -----------
  - [MMA7455L Accelerometer Datasheet](/resources/MMA7455L.pdf)
