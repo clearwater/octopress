@@ -9,8 +9,9 @@ footer: true
 
 OpenEmbedded for Chumby
 -----------------------
- - [OpenEmbedded for Chumby](http://github.com/clearwater/chumby-oe)
- - [Linux Kernel for Chumby](http://github.com/clearwater/chumby-linux)
+ - [Device Access Sample Code](https://github.com/clearwater/chumby-sampler)
+ - [OpenEmbedded for Chumby](https://github.com/clearwater/chumby-oe)
+ - [Linux Kernel for Chumby](https://github.com/clearwater/chumby-linux)
  - [OpenEmbedded Wiki](http://www.openembedded.org/index.php/Main_Page)
 
 Buy a Chumby Hackers Board
