@@ -170,7 +170,9 @@ Note that the power to this port (and P500?) is software controlled and may be o
 SW400
 -----
 
-DPad switch type EVQQ7.  [Data sheet](/resources/ATR0000CE9.pdf) available.
+DPad switch type EVQQ7.
+The [Data sheet](/resources/ATR0000CE9.pdf) is available.
+[Sample code](https://github.com/clearwater/chumby-sampler/tree/master/dpad) is available.
 
  - A : GPMI CE0n : BANK2_PIN28
  - B : GPMI WPn : BANK0_PIN23
@@ -181,3 +183,25 @@ DPad switch type EVQQ7.  [Data sheet](/resources/ATR0000CE9.pdf) available.
 {%img /resources/evqq7.png %}
 
 {%img /resources/sw400.png %}
+
+Accelerometer
+-------------
+A Freescale MMA7455L 3-axis accelerometer
+with adjustable sensitivity from +-2G to +-8G is accessible over I2C
+at device address 0x1D.
+
+The [Datasheet](/resources/MMA7455L.pdf) is available, [sample code](https://github.com/clearwater/chumby-sampler/tree/master/accel) is available.
+
+Green LEDs
+----------
+The 4 green LEDs are connected to the following GPIO pins:
+
+ - GPMI_D00
+ - GPMI_D01
+ - GPMI_D02
+ - GPMI_D03
+
+Importantly, before any of the LEDs can be used, the transistor on GPMI_RDY0 must be turned on to 
+ground the LEDs.
+
+[Sample code](https://github.com/clearwater/chumby-sampler/tree/master/leds) is available.
