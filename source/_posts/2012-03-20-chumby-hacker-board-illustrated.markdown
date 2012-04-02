@@ -192,6 +192,8 @@ at device address 0x1D.
 
 The [Datasheet](/resources/MMA7455L.pdf) is available, [sample code](https://github.com/clearwater/chumby-sampler/tree/master/accel) is available.
 
+![Schematic](https://github.com/clearwater/chumby-sampler/raw/master/images/accel-schematics.png)
+
 Green LEDs
 ----------
 The 4 green LEDs are connected to the following GPIO pins:
@@ -205,3 +207,5 @@ Importantly, before any of the LEDs can be used, the transistor on GPMI_RDY0 mus
 ground the LEDs.
 
 [Sample code](https://github.com/clearwater/chumby-sampler/tree/master/leds) is available.
+
+![Schematic](https://github.com/clearwater/chumby-sampler/raw/master/images/led-schematics.png)
