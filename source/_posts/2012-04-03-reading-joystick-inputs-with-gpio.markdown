@@ -5,13 +5,15 @@ date: 2012-04-03 11:04
 comments: true
 categories: 
 ---
-The Chumby Hacker Board has a 5-way (Panasonic EVQQ7)(/resources/ATR0000CE9.pdf) dpad joystick on one corner which is connected to the CPU's GPIO lines.
+The Chumby Hacker Board has a 5-way Panasonic EVQQ7([Datasheet](/resources/ATR0000CE9.pdf)) dpad joystick on one corner at SW400.  This post explains how to read the state of this switch via the GPIO interface.
 
 {%img /resources/evqq7.png %}
 
-The following table shows the signal names and pin addresses for each of the
-switch contacts A-E.  Holding the board such that the switch is in the south east
-corner [as shown here](http://clearwater.github.com/chumby-oe/blog/2012/03/20/chumby-hacker-board-illustrated/), A is east, B is south, C is north, D is west and E is depressed.
+Holding the CHB such that the switch is in the south east
+corner [as pictured here](http://clearwater.github.com/chumby-oe/blog/2012/03/20/chumby-hacker-board-illustrated/), switch A closes when the stick is pushed east, B is south, C is north, D is west and E closes when the stick is depressed.  Sad dpad is sad.
+
+The following table lists the signals and pin addresses for each of the
+switch contacts A-E.  
 
  - A : east : GPMI CE0n : BANK2_PIN28
  - B : south : GPMI WPn : BANK0_PIN23
@@ -19,19 +21,19 @@ corner [as shown here](http://clearwater.github.com/chumby-oe/blog/2012/03/20/ch
  - D : west : GPMI RDn : BANK0_PIN25
  - E : down : PWM4 : BANK_1_PIN30 (aka CHUMBY BEND)
 
-Each of these inputs is pulled high, and goes low when the switch is closed.
-Capacitors are used to prevent switch bounce.
+Each of these inputs is pulled high, and driven low when the switch is closed.
+1nF capacitors on each signal line prevent switch bounce.
 
 {%img /resources/sw400.png %}
 
-To read these inputs using GPIO you must
+To read these inputs using GPIO you must make 3 calls:
 
  - set the associated pin to GPIO mode,
  - disable output on the pin,
  - read the associated GPIO register to get the value
 
-For example to read switch E using the GPIO library available
-in the [chumby-sampler](https://github.com/clearwater/chumby-sampler) repo:
+For example to read switch E using the GPIO library from the
+[Chumby Sampler](https://github.com/clearwater/chumby-sampler) code:
 
 ```
 GPIO gpio;
@@ -55,6 +57,6 @@ unsigned int value_E = (gpio.get(HW_PINCTRL_DIN1, 0x40000000) >> 30) ^ 0x1;
 
 ```
 
-A complete example reading the state of all 5 switches 
-is available [here](https://github.com/clearwater/chumby-sampler/tree/master/dpad).
+Complete sample code for reading the state of all 5 switches 
+is available in the [Chumby Sampler](https://github.com/clearwater/chumby-sampler/).
 
