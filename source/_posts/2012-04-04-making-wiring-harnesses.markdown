@@ -40,10 +40,10 @@ black and you don't need to distinguish between them.
 
 Wire your motor up like this:
 
- - 1 : white
- - 2 : black
- - 3 : black
- - 4 : red
+ - motor pin 1 : white : arduino pin 4
+ - motor pin 2 : black : arduino pin 5
+ - motor pin 3 : black : arduino pin 6
+ - motor pin 4 : red   : arduino pin 7
 
 Be careful not to bend the pins on the motors when you slide the
 crimp connectors on.  Also note that the pins on the motor are flat, not round,
