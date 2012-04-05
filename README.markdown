@@ -1,3 +1,18 @@
+## Branching Octopress for a New Github Project Blog
+
+1.  git checkout master
+2.  git checkout -b project-name
+3.  git push -u octopress project-name
+4.  rake install
+5.  rake setup_github_pages
+6.  rake set_root_dir[/project-name/]
+7.  rake new_post["First Post"]
+8.  rake generate
+9. rake deploy 
+10.  git add sass source Rakefile _config.yml
+11. git commit -m "First post"
+12. git push
+
 ## What is Octopress?
 
 Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
@@ -34,3 +49,4 @@ THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 #### If you want to be awesome.
 - Proudly display the 'Powered by Octopress' credit in the footer.
 - Add your site to the Wiki so we can watch the community grow.
+
