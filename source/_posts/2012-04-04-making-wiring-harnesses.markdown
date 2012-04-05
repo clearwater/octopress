@@ -7,16 +7,17 @@ categories:
 ---
 A quick note about wiring harnesses for these motors.
 I've found it really handy to make harnesses from 4-wire CD audio
-cables and breakaway headers.  I have heard that it is easy to
-overheat these motors when soldering to their contacts, so I've
-been using slip-on connectors made from recycled PC audio cables.
+cables.  My harnesses use push-on connectors at the motor end
+so I never [accidentally cook the motor](http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1260978962) by soldering to the motor pins.
+ 
+![image](/resources/2012-04-04/imgp9232.jpg)
 
 The cables I'm talking about have 4-pin JST connectors on each end, and are
 used to connect the analog audio signal from a PC's internal CD player to the
 motherboard or sound card. I have accumulated a bunch of
 these over the years, so I'm glad to have a use for them.
 
-I also use [0.1" breakaway headers from AdaFruit](https://www.adafruit.com/products/392).
+I also use [0.1" breakaway headers](https://www.adafruit.com/products/392) and heatshrink tubing, both from AdaFruit.
 
 ![image](/resources/2012-04-04/imgp9227.jpg)
 
@@ -35,19 +36,18 @@ I also use [0.1" breakaway headers from AdaFruit](https://www.adafruit.com/produ
 
 You'll notice that these harnesses have two black wires, which would
 normally be a bit annoying.  However it turns out that the wires to
-pins 2 and 3 on the Switec motors are interchangable, so make them
-black and you don't need to distinguish between them.
+pins 2 and 3 on the Switec motors are interchangable so you don't need to distinguish between them.
 
 Wire your motor up like this:
 
- - motor pin 1 : white : arduino pin 4
- - motor pin 2 : black : arduino pin 5
- - motor pin 3 : black : arduino pin 6
- - motor pin 4 : red   : arduino pin 7
+ - Motor Pin 1         | white      | Arduino Pin 4
+ - Motor Pin 2         | black      | Arduino Pin 5
+ - Motor Pin 3         | black      | Arduino Pin 6
+ - Motor Pin 4         | red        | Arduino Pin 7
 
 Be careful not to bend the pins on the motors when you slide the
 crimp connectors on.  Also note that the pins on the motor are flat, not round,
-so the orientation of the crimp connector matters.
+so the orientation of the crimp connector matters; if it is too tight or too lose, try rotating the connector 90 degrees.
 
 Finally, if you plug the header into an Arduino so that white is at
 pin 4, and red is pin 7, you can define your motor in code like this:
