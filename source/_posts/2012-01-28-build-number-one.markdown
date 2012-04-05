@@ -24,7 +24,7 @@ forward - in fact the plastic lens is only held in by friction, and
 the dial and mechanism are held in by the lens.  No cutting was
 required.  #LFMF
 
-{% img left /resources/thermo_disassembly.jpg" thermometer disassembly %}
+{% img left /resources/thermo_disassembly.jpg thermometer disassembly %}
 This turned out to be important because after careful measurement I realized
 that the motor would have to be mounted snugly against the the back of the housing to
 leave the drive shaft protruding enough to attach a needle.  The plastic panel I cut away
@@ -63,4 +63,4 @@ is nice and snug, no slippage.
 So here's how it looks assembled.  Calibration is slightly out, but I'm going to make 
 a new dial face anyway, so no need to sweat about that.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/UJKaaRR9W6g" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/UJKaaRR9W6g" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

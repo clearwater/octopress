@@ -8,7 +8,7 @@ categories:
 
 Or more accurately, filing off the stops.
 
-Recently Tim Hirzel asked if I knew
+Recently [Tim Hirzel asked](http://clearwater.github.com/gaugette/about/index.html#comment-459699391) if I knew
 of a source of motors without stops, or if the X25.168's could be
 modified to remove the stops and open up the full 360 degrees of rotation.
 
@@ -34,7 +34,6 @@ I cut off the stop with a Stanley knife, and filed it flat with a small file.
 
 Reassembly was easy, and bugger me, it works.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/kY2yiKImWJE" frameborder="0" allowfullscreen></iframe>
  
 In the video you can see the needle hesitates on each rotation.  This is because of the acceleration/deceleration
 logic in the SwitecX25 library; I'm accelerating the motor from stop,

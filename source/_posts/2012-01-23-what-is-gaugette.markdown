@@ -12,7 +12,7 @@ Each motor requires 4 digital I/O pins,
 and a single Arduino can drive three motors.  The limit
 is purely due to Aruidno limit of 14 digital I/O lines.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/Z-f4m18n48I" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Z-f4m18n48I" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Source code for the project is available on 
 [GitHub](https://github.com/clearwater/gaugette).
