@@ -6,6 +6,8 @@ comments: true
 categories: 
 ---
 
+_Spoiler alert: no, the forums are not gone.  It was back, but it looks like problems with the anti-spam feature are not fully resolved.  Thanks to Duane for his hard work getting the forum back up._
+
 {% img right /resources/chumby_mark_master_w.png %} 
 
 Following close on the news that Chumby Industries has stopped trading,
@@ -18,4 +20,6 @@ Zurk's offline firmware is available [on sourceforge](http://sourceforge.net/pro
 
 At the moment the Chumby [source files](http://files.chumby.com/source) are still available, but given where things seem to be headed, I've taken the precaution of taking a snapshot of that server.
 
-So what's next?  If you want to be part of the Chumby community maybe the dormant [Chumby Users Group](https://groups.google.com/forum/?fromgroups#!forum/chumby-user-group) is the place to start.
+So what's next?  If you want to be part of the Chumby community maybe the dormant [Chumby Users Group](https://groups.google.com/forum/?fromgroups#!forum/chumby-user-group) is the place to start.  _Nope, the Google group appears to be dead, new posts are not being propagated._ 
+
+
