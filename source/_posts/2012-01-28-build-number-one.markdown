@@ -60,7 +60,8 @@ and smacked it with a hammer to flatten out the dish and close up the hole.  Tha
 a little too well and I had to ream the hole out a bit with a thumb tack.  Now the needle
 is nice and snug, no slippage.
 
+{% youtube UJKaaRR9W6g %}
+
 So here's how it looks assembled.  Calibration is slightly out, but I'm going to make 
 a new dial face anyway, so no need to sweat about that.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/UJKaaRR9W6g" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

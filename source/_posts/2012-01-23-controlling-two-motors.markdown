@@ -17,4 +17,4 @@ able to easily fiddle with the motion parameters.
 It turns out that two motors work pretty well with only minor tweaks to the existing
 code.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/Z-f4m18n48I" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+{% youtube Z-f4m18n48I %}

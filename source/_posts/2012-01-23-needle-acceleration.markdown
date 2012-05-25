@@ -6,11 +6,11 @@ comments: true
 categories: 
 ---
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/uNLySm71OBc" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
 My first cut at the [Switec X25 library](https://github.com/clearwater/gaugette)
 stepped the needle at a constant speed.  You can see the constant speed
 motion in the [original video](http://www.youtube.com/watch?v=vwAxRk_5oXA).
+
+{% youtube uNLySm71OBc %}
 
 I've updated the library to support acceleration and deceleration, partly because
 it seems more aesthetically pleasing, and partly because I have a notion that
