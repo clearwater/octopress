@@ -38,10 +38,10 @@ backlight it with an LED which might look nice in the dark.
 
 {% img left /resources/fiskars_hole_punch.png Fiskars Hole Punch %}
 One thing that had me stuffed is how to punch a neat hole in the paper for
-the drive shaft.  A standard hole-punch is too big and can't reach 
+the drive shaft.  A standard hole-punch makes big holes and can't reach 
 far enough from the edge of the paper.  Drilling would leave messy edges.  Scouring
 the aisles at Officeworks I found a 
-[set of three eyelet setters](http://www.fiskarscraft.eu/Products/Craft/Punches/Eyelet-Setter/Eyelet-Setter-Pack) from Fiskars in the scrap-booking section.  The hole punches use a crazy spring-driven hammer mechanism, so you can position them anywhere on the page, pull back the hammer, and smack, you have a hole.  I was reckon I want a 3mm hole, and the middle
+[set of three eyelet setters](http://www.fiskarscraft.eu/Products/Craft/Punches/Eyelet-Setter/Eyelet-Setter-Pack) from Fiskars in the scrap-booking section.  The hole punches use a crazy spring-driven hammer mechanism, so you can position them anywhere on the page, pull back the hammer, and smack, you have a hole.  I reckon I want a 3mm hole, and the middle
 size is 3.2mm (1/8").  The downside is the set of 3 cost about $25.  Anyway they work a treat and now 
 I have some crafty hole punches.
 
