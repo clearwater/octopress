@@ -25,6 +25,7 @@ is rated to source and sink 20mA, which is half that of an Arduino, but should
 be (just) enough to drive a Switec.
 These chips are available [from Adafruit](http://www.adafruit.com/products/593),
 who also now carry an awesome [16-port version](http://www.adafruit.com/products/732).
+And they are cheap as, well, chips.
 
 This first article covers connecting the MCP23008 to the Pi and verifying the i2c connection.
 
@@ -139,22 +140,21 @@ apparently no problem connecting 3.3V and 5V circuits over i2c.
 Time will tell if the Pi's power supply can handle the load and
 noise introduced by the Switec stepper motors.
 
-In addition you MUST make the following connections on the chip:
+In addition you MUST make the following connections on the chip.  *You cannot let these float!*
+Well you can, but you will get i2c read errors if you do.
 
- - MCP23008 address pins 3,4,5 to Vdd or Vss to set the bus address.  You cannot let them float.
- - MCP23008 reset pin 6 to Vdd.  Pull it high, you cannot let it float.
-
-As a note here, if you let any of these pins float you will likely
-see continuous or intermittent i2c read errors from the chip.
+ - MCP23008 address pins 3,4,5 to Vdd or Vss to set the bus address.
+ - MCP23008 reset pin 6 to Vdd.  Pull it high.
 
 You do not need current limiting resistors on the address or reset pins and the Pi 
 has built-in pull-up resistors on SDA and SCL so you do not need to provide them.
 
-The i2c 7-bit address will be 0x20 + A2*4 + A1*2 + A0, so 
+The i2c 7-bit address will be binary `[ 0 0 1 0 A2 A1 A0 ]` so
 if all address lines are pulled to ground it will be at 0x20, if they
 are all high, it will be at 0x27.  i2c addresses are sometimes confusingly 
-left-shifted 1 bit and expressed as 8-bit addresses which are 2x the 7-bit
-address.  I know, right.
+left-shifted 1 bit and expressed as 8-bit addresses,  which are 2x the 7-bit
+address, like this `[ 0 1 0 A2 A1 A0 0 ]`.  Can't we all just get along?
+Side note - if you are reading i2c protocol diagrams, know that i2c sends MSB first.
 
 Step 4 - Probe!
 ----
