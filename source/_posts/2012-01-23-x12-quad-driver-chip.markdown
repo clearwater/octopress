@@ -20,3 +20,11 @@ but after Swatch
 to Singapore-based [Juken Techonology](http://www.jukenswisstech.com) in 2009, 
 that website disappeared.
 
+There appear to be several other manufacturers making clones of this chip.  Here's what I've found so far:
+
+ - The original Switec X12.017 Quad Driver [(datasheet)](/resources/switec/X12_017.pdf)
+ - The VID VID6606 Quad Driver [(datasheet)](/resources/vid/2009111391612_VID6606%20manual%20060927.pdf)
+ - The [NOST Microelectronics](http://www.nostm.com) BY8920  Quad Driver [(datasheet, in Chinese)](/resources/nost/1428412011616by8290datasheet.pdf), [datasheet translated to English by Google](http://translate.google.com.au/translate?hl=en&sl=zh-CN&tl=en&u=http%3A%2F%2Fguy.carpenter.id.au%2Fgaugette%2Fresources%2Fnost%2F1428412011616by8290datasheet.pdf).
+ - The AX1201728SG was suggested in the comments.  I have not been able to locate a datasheet, but unlike any of the other chips listed here, these are available in single quantity on ebay.  The SG is a SOP (Small Outline Package) surface mount IC.  I believe the DIP version of this chip is the AX1201728PG.
+
+NOST also manufacture the[BY8291, a 16-pin dual driver](/resources/nost/17641201167by8291datasheet.pdf).

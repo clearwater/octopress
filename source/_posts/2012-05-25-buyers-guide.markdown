@@ -69,7 +69,7 @@ locate a supplier of these chips since microcomponents.ch shut down.
 Suppliers
 ---------
 
-I have not found any well-know online store supplying these parts.
-They are however cheap and plentiful on ebay.  However it can
+I have not found any well-known online store supplying these parts.
+They are cheap and plentiful on ebay.  However it can
 be difficult to determine exactly what you are getting; these motors are generally
 sold as Switec X25 _replacements_, without clearly specifying the manufacturer.

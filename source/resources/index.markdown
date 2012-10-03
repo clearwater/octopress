@@ -35,5 +35,5 @@ MCR Motor MR1107/MR1108
 Driver Chips
 ------------
  - [X12.017 Quad Driver Chip Data Sheet](/resources/switec/X12_017.pdf)
- - [BY8290 Quad Driver Chip (X12.017 clone) Chinese Data Sheet](/resources/BY8290datasheet.pdf)
+ - [BY8290 Quad Driver Chip Data Sheet (in Chinese)](/resources/nost/1428412011616by8290datasheet.pdf), and here's a link to a Google-generated [English translation of the data sheet](http://translate.google.com.au/translate?hl=en&sl=zh-CN&tl=en&u=http%3A%2F%2Fguy.carpenter.id.au%2Fgaugette%2Fresources%2Fnost%2F1428412011616by8290datasheet.pdf)
  - [VID6606 Quad Driver Chip Data Sheet](/resources/vid/2009111391612_VID6606%20manual%20060927.pdf)
