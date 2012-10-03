@@ -31,3 +31,8 @@ MCR Motor MR1107/MR1108
  - [MCR Motor Mechanical Drawings](/resources/mcr/2009212115216347.pdf)
  - [MCR PWM Driving Mode](/resources/mcr/201041010510949.pdf)
  - [MCR Acceleration Curve](/resources/mcr/2010410104915847.pdf)
+
+Driver Chips
+------------
+ - [BY8290 Quad Driver Chip (X12.017 clone) Chinese Data Sheet](/resources/BY8290datasheet.pdf)
+
