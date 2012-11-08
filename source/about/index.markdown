@@ -28,4 +28,7 @@ and have published a
 [Arduino SwitecX25 driver library](https://github.com/clearwater/SwitecX25)
 on GitHub.
 
+{% img right /resources/gauge_pair.jpg Mounted Gauges %}
+
+
  

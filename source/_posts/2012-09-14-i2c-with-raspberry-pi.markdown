@@ -231,12 +231,24 @@ This is the final circuit.
 Speed Tests
 ----
 
+__NOTE: Since writing this I discovered that the supply voltage used in these tests
+was down-regulated to around 3.9V instead of 5.0V, which accounts for the disappointing
+speeds noted below.  I will repeat these tests when I get a chance.
+Initial tests indicate that at a full 5.0V the motor has roughly the
+same speed limits when driven by the MCP23008 as it does when
+driven directly from Arduino digital IO ports.
+It is also worth noting that the overhead for sending each motor pulse update
+over I&sup2;C is about 400&mu;S.  This could probably be improved using byte mode
+(to avoid sending the register address over I&sup2;C on each update) or by selecting
+a higher I&sup2;C baud rate.__
+
 I have previously measured [the maximum speed](/blog/2012/05/08/how-fast-is-it/)
 that the Arduino can turn a VID29 stepper when driving directly from the I/O pins, 
 and found it was a little over 500&deg;/S.
 
-I repeated these tests with the RPi and found a maximum speed of around 295 &deg;/S,
-presumably lower because of the reduced current capacity.
+I repeated these tests with the RPi and found a maximum speed of around 215 &deg;/S,
+presumably lower because of the reduced current capacity. (Correction - it is due to
+an accidentally low supply voltage.  See above.)
 I tried ganging two pins from the MCP23008 to each of the motor pins, thinking
 I might squeeze a little extra current out of the chip.  That boosted the maximum
 speed a little, but still fell well short of the Arduino.
@@ -244,8 +256,8 @@ speed a little, but still fell well short of the Arduino.
 System     | Min &mu;S/step | Max &deg;/S
 -------    | ---------- | --------
 Arduino    | 649        | 513
-RPi + MCP23008   | 1130       | 295
-RPi + MCP23008 paired pins | 1005       | 332
+RPi + MCP23008   | 1550       | 215
+RPi + MCP23008 paired pins | 1426       | 233
 
 
 Conclusions
