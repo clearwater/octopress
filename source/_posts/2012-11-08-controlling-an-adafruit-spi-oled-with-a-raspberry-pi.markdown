@@ -86,7 +86,7 @@ The python library for the SSD1306 has been rolled into the
 The test code below vertically scrolls vertically between two display buffers, one
 showing the current time, one showing the current date.
 
-{% youtube 6Ik7lDBoKz8 %}
+{% youtube U2uF2-zGiAM %}
 
 This sample code is [included in the py-gaugette library](https://github.com/guyc/py-gaugette/blob/master/samples/ssd1306_test.py).
 
@@ -134,8 +134,7 @@ About Fonts
 
 This test code uses the 5x7 bitmap font from the 
 [Adafruit GFX library](https://github.com/adafruit/Adafruit-GFX-Library/blob/master/glcdfont.c)
-scaled to x2 and x3.  I have not added
-any spacing between characters either.  It works, but __Steve Jobs would
+scaled to x2 and x3. It works, but __Steve Jobs would
 not approve!__  It isn't taking advantage of the very high resolution of these
 lovely little displays.  Larger fonts with kerning would be a great addition.
 
