@@ -13,7 +13,7 @@ uses a SSD1306 driver chip ([datasheet](http://www.adafruit.com/datasheets/SSD13
 and Adafruit have published [excellent tutorials](http://learn.adafruit.com/monochrome-oled-breakouts) and
 [libraries](https://github.com/adafruit/Adafruit_SSD1306) for driving this from an Arduino.
 
-When asked in [their their forum](http://adafruit.com/forums/viewtopic.php?f=47&t=33040)
+When [asked in their forum](http://adafruit.com/forums/viewtopic.php?f=47&t=33040)
 about Raspberry Pi support, Adafruit have said
 that _there is a huge backlog of libraries to port to the RasPi and (they) don't have any ETA on the SSD1306_.
 
@@ -23,21 +23,22 @@ To that end, I've partially ported Adafruit's SSD1306 library to Python for the 
 in that:
 
  1. it only supports the 128x32 SPI module (unlike the original that supports the I&sup2;C and 128x64 modules) and 
- 2. only supports pixel and text drawing functions (no geometric drawing functions).
+ 2. it only supports pixel and text drawing functions (no geometric drawing functions).
 
 Signal Levels
 -------------
 
-The Adafruit module has built-in level-shifters for 5V operation.  I wasn't entirely confident
-from what I read online that the module would work unmodified at 3.3V, but the module
-silkscreen says very clearly 3.3 - 5V.  I can confirm it works very happily with
-both Vin and signalling at 3.3V.
+The SSD1306 operates at 3.3V, and the Adafruit module has built-in level-shifters for 5V operation.
+However I want to drive it at 3.3V from the Pi, and I wasn't confident from the documentation that
+it would operate at 3.3V without modification.  However the back-side silkscreen says very clearly 3.3 - 5V
+and I can confirm it works very happily with both Vin and signalling at 3.3V.
 
 SPI Signals
 -----------
 
-In SPI nomenclature MISO is _master in, slave out_, MOSI is _master out, slave in_.
-The SSD1306 module is write-only using SPI, and so there is no MISO connection available on the module,
+In [SPI nomenclature](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
+MISO is _master in, slave out_, MOSI is _master out, slave in_.
+The SSD1306 module is _write-only_ using SPI, and so there is no MISO connection available,
 and __MOSI is labelled DATA on the module__.
 Of course SPI always reads while it writes, but it is fine to leave MISO disconnected.  It will
 be pulled low, so if you ever looked at the data you would see all zeros.
@@ -53,7 +54,7 @@ argument bytes that follow the opcode when sending multi-byte commands.  For exa
 command consists of a one-byte opcode (0x81) followed by a one-byte contrast value, so I was sending
 the first byte with D/C high, and pulling it low for the argument byte.  Wrongo!  That's not what they
 mean by _data_; __keep the D/C line high for all bytes in a command, and pull it low 
-when blitting image data into the image memory buffer__.  Simple.
+when blitting image data into the image memory buffer__.  Simple as that.
 
 Platform
 --------
@@ -67,8 +68,7 @@ I'm running Python 2.7.3 on a Rasberry Pi Model B (v1) with the following softwa
 Wire Up
 -------
 
-Here's how I've wired it up.  You can use any free GPIOs for
-D/C and Reset.
+Here's how I've wired it up.  You can freely change the GPIOs for D/C and Reset.
 {%img /resources/2012-11-08/raspberrypi_and_ssd1306.png %}
 
 Test Code
@@ -122,7 +122,7 @@ while True:
     # vertically scroll to switch between buffers
     for i in range(0,32):
         offset = (offset + 1) % 64
-        led.command(led.SETSTARTLINE | offset)
+        led.command(led.SET_START_LINE | offset)
         time.sleep(0.01)
 ```
 

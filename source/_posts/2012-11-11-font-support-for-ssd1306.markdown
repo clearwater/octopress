@@ -124,14 +124,14 @@ Supporting Horiontal Scrolling
 In the process of testing these fonts, I realized I would like to be able to scroll horizontally,
 and the SSD1306 doesn't have hardware support for that.  Vertical scrolling is accomplished using
 the ```SET_START_LINE``` command, but the horizontal scrolling commands do not support scrolling
-through an image that is wider than the display, so we need to do it in software.
+through an image that is wider than the display.  We need to do it in software.
 
 It turns out that blitting memory from the Pi to the SSD1306 over SPI is pretty fast; fast enough
 to get a reasonable horizontal scroll effect by blitting complete frames from the Pi's
 memory to the SSD1306.  There's just one thing - the default memory mode of the
 SSD1306 is [row-major](http://en.wikipedia.org/wiki/Row-major_order), and 
 for horizontal scrolling we really want to send a __vertical slice__ of the memory buffer
-over SPI.  To avoid buffer manipulatio I switched the Pi-side memory buffer to use
+over SPI.  To avoid buffer manipulation I switched the Pi-side memory buffer to use
 [column-major order](http://en.wikipedia.org/wiki/Column-major_order#Column-major_order),
 and use ```MEMORY_MODE_VERT``` on the SSD1306 when blitting.
 
@@ -150,7 +150,7 @@ led.data(buffer[start:start+length])                     # send a vertical slice
 
 Note that using column-major layout we cannot easily blit a __horizontal__
 slice of the virtual memory buffer into display ram, so we can't use the same method for
-vertical scrolling.  Instead we use the hardware supported SET_START_LINE.  By combining
-these methods we have fast horizontal and vertical scrolling.
+vertical scrolling.  Stick with ```SET_START_LINE``` for vertical scrolling.  The combination
+of these methods gives us fast horizontal and vertical scrolling.
  
 An updated [library](https://github.com/guyc/py-gaugette) with [sample code](https://github.com/guyc/py-gaugette/blob/master/samples/font_test.py) is available on github.
