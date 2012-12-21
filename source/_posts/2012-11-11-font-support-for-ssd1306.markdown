@@ -118,8 +118,8 @@ textSize = led.draw_text3(0,0,"Hello World",arial_16)
 
 {% img right /resources/2012-11-11/old_english_text.jpg %}
 
-Supporting Horiontal Scrolling
-------------------------------
+Supporting Horizontal Scrolling
+-------------------------------
 
 In the process of testing these fonts, I realized I would like to be able to scroll horizontally,
 and the SSD1306 doesn't have hardware support for that.  Vertical scrolling is accomplished using
@@ -137,8 +137,8 @@ and use ```MEMORY_MODE_VERT``` on the SSD1306 when blitting.
 
 To illustrate: the memory buffer is stored as a python list of bytes.  Consider a virtual
 buffer that is 256 columns wide and 64 rows high.  Using column-major layout
-we can extract and blit the columns from e.g. 100 to 227 simply using the python
-list addressing ```list[100*64/8:128*64/8]```.
+we can address the 128 columns starting at column 100 using the python
+list addressing ```buffer[100*64/8:128*64/8]```.
 
 ```
 buffer = [0] * 256 * 64 / 8                              # buffer for 256 columns, 64 rows, 8 pixels stored per byte
@@ -152,5 +152,7 @@ Note that using column-major layout we cannot easily blit a __horizontal__
 slice of the virtual memory buffer into display ram, so we can't use the same method for
 vertical scrolling.  Stick with ```SET_START_LINE``` for vertical scrolling.  The combination
 of these methods gives us fast horizontal and vertical scrolling.
- 
+
+{% youtube fSCDr8A_ItU %}
+
 An updated [library](https://github.com/guyc/py-gaugette) with [sample code](https://github.com/guyc/py-gaugette/blob/master/samples/font_test.py) is available on github.
