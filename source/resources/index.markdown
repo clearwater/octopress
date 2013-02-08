@@ -31,3 +31,9 @@ MCR Motor MR1107/MR1108
  - [MCR Motor Mechanical Drawings](/resources/mcr/2009212115216347.pdf)
  - [MCR PWM Driving Mode](/resources/mcr/201041010510949.pdf)
  - [MCR Acceleration Curve](/resources/mcr/2010410104915847.pdf)
+
+Driver Chips
+------------
+ - [X12.017 Quad Driver Chip Data Sheet](/resources/switec/X12_017.pdf)
+ - [BY8290 Quad Driver Chip Data Sheet (in Chinese)](/resources/nost/1428412011616by8290datasheet.pdf), and here's a link to a Google-generated [English translation of the data sheet](http://translate.google.com.au/translate?hl=en&sl=zh-CN&tl=en&u=http%3A%2F%2Fguy.carpenter.id.au%2Fgaugette%2Fresources%2Fnost%2F1428412011616by8290datasheet.pdf)
+ - [VID6606 Quad Driver Chip Data Sheet](/resources/vid/2009111391612_VID6606%20manual%20060927.pdf)

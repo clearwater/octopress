@@ -25,8 +25,5 @@ and a quick ruby script to query my pfSense firewall to get some live data to te
 
 Add some duct tape for a gauge, and behold the simplest analog bandwidth meter ever:
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/vwAxRk_5oXA" frameborder="0" allowfullscreen></iframe>
-
-
-
+{% youtube vwAxRk_5oXA %}
 

@@ -42,7 +42,7 @@ so they can share the same lookup table.
 To determine the inter-step delay at any given value of ```vel```, we find 
 the first table entry such that ```accelTable[i][0] < vel```.  In practice this means that the
 motor will step at 5000 &micro;S intervals for 9 steps, then 1500 &micro;S 
-steps for the next 20 steps, 1000 &micro;S for the next 70 steps, and so on.
+steps for the next 30 steps, 1000 &micro;S for the next 100 steps, and so on.
 The peak speed with a delay of 600 &micro;S equates to 1666 Hz step rate
 or about 500 degrees per second.
 

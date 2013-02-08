@@ -40,10 +40,12 @@ pins 2 and 3 on the Switec motors are interchangable so you don't need to distin
 
 Wire your motor up like this:
 
- - Motor Pin 1         | white      | Arduino Pin 4
- - Motor Pin 2         | black      | Arduino Pin 5
- - Motor Pin 3         | black      | Arduino Pin 6
- - Motor Pin 4         | red        | Arduino Pin 7
+Motor Pin | Wire Color | Arduino Pin
+--------- | ---------- | -----------
+1         | white      | 4
+2         | black      | 5
+3         | black      | 6
+4         | red        | 7
 
 Be careful not to bend the pins on the motors when you slide the
 crimp connectors on.  Also note that the pins on the motor are flat, not round,
