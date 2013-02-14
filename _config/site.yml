@@ -13,3 +13,4 @@ root: /gaugette
 destination: public/gaugette
 markdown: maruku
 recent_posts: 20
+subscribe_rss: /gaugette/atom.xml
