@@ -13,3 +13,4 @@ root: /gaugette
 destination: public/gaugette
 markdown: maruku
 favicon: /gaugette/favicon.png
+recent_posts: 20
