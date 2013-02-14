@@ -3,3 +3,13 @@
 #   User Site Configuration   #
 # --------------------------- #
 
+url: http://guy.carpenter.id.au/gaugette
+title: Gaugette
+subtitle: a simple and cheap Arduino analog gauge using the Switec X25.168 stepper motor.
+author: Guy
+simple_search: http://google.com/search
+description:
+root: /gaugette
+destination: public/gaugette
+markdown: maruku
+favicon: /gaugette/favicon.png
