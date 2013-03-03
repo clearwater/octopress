@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 group :development do
+  gem 'psych'
   gem 'rake', '~> 10.0.3'
   gem 'rack', '~> 1.4.1'
   gem 'jekyll', '~> 0.12.0'

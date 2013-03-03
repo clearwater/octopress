@@ -8,7 +8,7 @@ categories:
 
 Or more accurately, filing off the stops.
 
-Recently [Tim Hirzel asked](http://clearwater.github.com/gaugette/about/index.html#comment-459699391) if I knew
+Recently [Tim Hirzel asked](/about#comment-459699391) if I knew
 of a source of motors without stops, or if the X25.168's could be
 modified to remove the stops and open up the full 360 degrees of rotation.
 

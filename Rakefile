@@ -292,6 +292,14 @@ task :rsync do
     exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
   end
   puts "## Deploying website via Rsync"
+
+  print "rsync -avze 'ssh -p #{configuration[:ssh_port]}"
+  print " #{'-i' + configuration[:ssh_key] unless configuration[:ssh_key].empty?}'"
+  print " #{exclude} #{configuration[:rsync_args]}"
+  print " #{"--delete" unless configuration[:rsync_delete] == false}"
+  print " #{configuration[:destination]}/ "
+  print " #{configuration[:ssh_user]}:#{configuration[:document_root]}"
+
   ok_failed system("rsync -avze 'ssh -p #{configuration[:ssh_port]} #{'-i' + configuration[:ssh_key] unless configuration[:ssh_key].empty?}' #{exclude} #{configuration[:rsync_args]} #{"--delete" unless configuration[:rsync_delete] == false} #{configuration[:destination]}/ #{configuration[:ssh_user]}:#{configuration[:document_root]}")
 end
 

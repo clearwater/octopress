@@ -4,3 +4,7 @@
 # -------------------------- #
 
 deploy_default: rsync
+ssh_user: guy@jumba.clearwater.com.au
+ssh_key: ""
+document_root: /data/www/guy.carpenter.id.au/gaugette
+rsync_delete: false

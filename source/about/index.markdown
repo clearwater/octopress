@@ -11,8 +11,12 @@ What is Gaugette?
 -----------------
 
 {% img right /resources/thermo_backlit.png LED Backlighting %}
-Gaugette is a project detailing the construction of custom analog gauges using
-an Arduino microcontroller and Switec X25 stepper motors.
+Gaugette is a blog detailing the construction of custom gauges
+and gadgets using Arduino microcontrollers or Raspberry Pis.
+
+It was originally created to document the creation of analog gauges using
+Switec X25 stepper motors, but the focus is now broader; it turns out
+not every gadget needs an analog gauge.  Go figure.
 
 What is a Switec X25?
 ---------------------
@@ -29,6 +33,3 @@ and have published a
 on GitHub.
 
 {% img right /resources/gauge_pair.jpg Mounted Gauges %}
-
-
- 

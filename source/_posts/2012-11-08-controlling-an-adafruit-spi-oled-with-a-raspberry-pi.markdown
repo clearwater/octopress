@@ -69,7 +69,7 @@ Wire Up
 -------
 
 Here's how I've wired it up.  You can freely change the GPIOs for D/C and Reset.
-{%img /resources/2012-11-08/raspberrypi_and_ssd1306.png %}
+{%img /resources/2012-11-08/raspberrypi_and_ssd1306.jpg %}
 
 Test Code
 ----
