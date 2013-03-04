@@ -3,7 +3,8 @@ layout: post
 title: "Harder Better Stronger Faster"
 date: 2012-10-17 09:40
 comments: true
-categories: 
+categories:
+ - Switec X25
 published: false
 ---
 

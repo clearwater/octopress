@@ -3,7 +3,8 @@ layout: post
 title: "LED Gauge Backlighting"
 date: 2012-02-11 17:14
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 {% img right /resources/thermo_backlit.png LED Backlighting %}
 

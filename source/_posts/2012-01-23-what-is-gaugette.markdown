@@ -3,7 +3,9 @@ layout: post
 title: "What is Gaugette?"
 date: 2012-01-05 13:11
 comments: true
-categories: Arduino Switec x25
+categories:
+ - Switec X25
+ - Arduino
 ---
 
 Gaugette is a project detailing the construction of custom analog gauges using

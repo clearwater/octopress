@@ -3,7 +3,8 @@ layout: post
 title: "Making Wiring Harnesses"
 date: 2012-04-04 13:05
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 A quick note about wiring harnesses for these motors.
 I've found it really handy to make harnesses from 4-wire CD audio

@@ -3,7 +3,8 @@ layout: post
 title: "Just a Pretty Face"
 date: 2012-02-06 17:33
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 {% img right /resources/100k_square_dial.png Dial Face Artwork %}

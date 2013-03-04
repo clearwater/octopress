@@ -3,7 +3,9 @@ layout: post
 title: "Gauge Build Number One"
 date: 2012-01-28 15:56
 comments: true
-categories: 
+categories:
+ - Switec X25
+ - Arduino
 ---
 
 {% img left /resources/thermo_original.jpg $5 Hygrometer %}

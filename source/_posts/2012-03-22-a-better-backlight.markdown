@@ -3,7 +3,8 @@ layout: post
 title: "A Better Backlight"
 date: 2012-03-22 11:18
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 For the second gauge in this build, I tried to get

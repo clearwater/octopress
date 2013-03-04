@@ -3,7 +3,9 @@ layout: post
 title: "Motor Acceleration and Deceleration"
 date: 2012-01-15 19:38
 comments: true
-categories: 
+categories:
+ - Switec X25
+ - Arduino
 ---
 
 My first cut at the [Switec X25 library](https://github.com/clearwater/gaugette)

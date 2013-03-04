@@ -3,7 +3,8 @@ layout: post
 title: "Well Ain't That Shiny!"
 date: 2012-01-26 11:03
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 {% img right /resources/shiny_things.jpg Pretty Shiny Things %}
 I've been looking around on-line and in stores for some parts to 

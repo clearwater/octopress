@@ -3,7 +3,9 @@ layout: post
 title: "A Simplified Acceleration Model"
 date: 2012-01-26 09:42
 comments: true
-categories: 
+categories:
+ - Switec X25
+ - Arduino
 ---
 The logic in the ```advance()``` function of the 
 [Switec X25 library](https://github.com/clearwater/SwitecX25)

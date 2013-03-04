@@ -3,7 +3,8 @@ layout: post
 title: "Using the SwitecX25 Library"
 date: 2012-02-16 18:04
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 Getting Started with the SwitecX25 Library

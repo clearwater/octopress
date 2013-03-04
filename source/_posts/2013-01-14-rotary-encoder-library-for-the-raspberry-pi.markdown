@@ -3,7 +3,8 @@ layout: post
 title: "Rotary Encoder Library for the Raspberry Pi"
 date: 2013-01-14 20:49
 comments: true
-categories: 
+categories:
+ - Raspberry Pi
 ---
 
 Here's a quick overview of the rotary encoder I/O class in

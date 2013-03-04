@@ -3,7 +3,8 @@ layout: post
 title: "Pulling Out All The Stops"
 date: 2012-04-04 09:58
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 Or more accurately, filing off the stops.

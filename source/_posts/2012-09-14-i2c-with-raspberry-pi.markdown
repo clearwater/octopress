@@ -3,7 +3,8 @@ layout: post
 title: "Analog Gauges Using I&sup2;C on the Raspberry Pi"
 date: 2012-09-14 15:49
 comments: true
-categories: "raspberrypi"
+categories:
+ - Raspberry Pi
 ---
 
 {% img right http://guy.carpenter.id.au/gaugette/resources/thermo_backlit.png %}

@@ -3,7 +3,8 @@ layout: post
 title: "Separation Anxiety"
 date: 2012-02-04 11:38
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 {% img right /resources/dial_parts.png Separation Anxiety %}
 I've separated the Switec X25 motor driver code into a separate

@@ -3,7 +3,8 @@ layout: post
 title: "Controlling an Adafruit SSD1306 SPI OLED with a Raspberry Pi"
 date: 2012-11-08 10:31
 comments: true
-categories: 
+categories:
+ - Raspberry Pi
 ---
 
 {% img right /resources/2012-11-08/ssd1306.jpg %}

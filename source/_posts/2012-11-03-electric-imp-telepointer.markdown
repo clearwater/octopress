@@ -3,7 +3,8 @@ layout: post
 title: "Electric Imp Telepointer"
 date: 2012-11-03 12:43
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 Here's [an interesting project](http://forums.electricimp.com/discussion/179/telepointer/p1)

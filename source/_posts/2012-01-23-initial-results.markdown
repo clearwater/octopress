@@ -3,7 +3,9 @@ layout: post
 title: "Initial Results"
 date: 2012-01-09 14:16
 comments: true
-categories: Arduino Switec x25 
+categories:
+ - Switec X25
+ - Arduino
 ---
 
 Wiring It Up

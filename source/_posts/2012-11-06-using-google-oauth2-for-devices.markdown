@@ -3,7 +3,8 @@ layout: post
 title: "Using Google OAuth2 for Devices"
 date: 2012-11-06 13:03
 comments: true
-categories: 
+categories:
+ - Raspberry Pi
 ---
 
 I've been working on a Raspberry Pi based device that needs to log data to a Google Docs spreadsheet.

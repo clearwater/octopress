@@ -3,7 +3,8 @@ layout: post
 title: "Attack of the Switec Clones?"
 date: 2012-01-24 09:29
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 {% img right /resources/X25_clone.png Switec Clones %}
 When my eBay Switec X25.168 motors arrived, they didn't look at all like

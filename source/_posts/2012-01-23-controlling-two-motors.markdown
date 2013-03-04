@@ -3,7 +3,9 @@ layout: post
 title: "Two Motors, One Arduino"
 date: 2012-01-23 14:39
 comments: true
-categories: 
+categories:
+ - Switec X25
+ - Arduino
 ---
 
 Last night I built a pair of improved wiring harnesses so I could

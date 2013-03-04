@@ -3,7 +3,8 @@ layout: post
 title: "Better Fonts for the SSD1306"
 date: 2012-11-11 16:42
 comments: true
-categories: 
+categories:
+ - Raspberry Pi
 ---
 
 {% img right /resources/2012-11-08/ssd1306.jpg %}

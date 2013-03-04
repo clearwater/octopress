@@ -3,7 +3,8 @@ layout: post
 title: "How Fast Is It?"
 date: 2012-05-08 09:06
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 I recently [removed the internal stops](/blog/2012/04/04/pulling-out-the-stops/) on a VID-29 stepper.  I've used this free-turning motor and an optical sensor to exerimentally test some operational limits of the motor.  The test rig uses a photo-interruptor to determine the needle position:

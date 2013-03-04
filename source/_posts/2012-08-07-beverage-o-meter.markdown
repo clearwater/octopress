@@ -3,7 +3,8 @@ layout: post
 title: "Beverage-o-Meter"
 date: 2012-08-07 10:15
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 Phil Bambridge has blogged about

@@ -3,7 +3,8 @@ layout: post
 title: "Buyers Guide"
 date: 2012-05-25 11:06
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 Manufacturers

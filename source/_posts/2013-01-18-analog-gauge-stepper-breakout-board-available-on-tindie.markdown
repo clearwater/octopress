@@ -3,7 +3,8 @@ layout: post
 title: "Analog Gauge Stepper Breakout Board available on Tindie"
 date: 2013-01-18 07:27
 comments: true
-categories: 
+categories:
+ - Switec X25
 ---
 
 {% img right /resources/2013-01-18/analog-gauge-stepper-breakout.jpg %}

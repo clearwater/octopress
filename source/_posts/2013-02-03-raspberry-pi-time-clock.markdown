@@ -3,7 +3,8 @@ layout: post
 title: "Raspberry Pi Time Clock"
 date: 2013-02-03 14:18
 comments: true
-categories: 
+categories:
+ - Raspberry Pi
 ---
 
 Gaugette Time Clock
