@@ -10,8 +10,10 @@ A quick note about wiring harnesses for these motors.
 I've found it really handy to make harnesses from 4-wire CD audio
 cables.  My harnesses use push-on connectors at the motor end
 so I never [accidentally cook the motor](http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1260978962) by soldering to the motor pins.
- 
+
 ![image](/resources/2012-04-04/imgp9232.jpg)
+
+<!--more-->
 
 The cables I'm talking about have 4-pin JST connectors on each end, and are
 used to connect the analog audio signal from a PC's internal CD player to the
@@ -58,4 +60,3 @@ pin 4, and red is pin 7, you can define your motor in code like this:
 ```
 SwitecX25 motor1(MOTOR_STEPS, 4,5,6,7);
 ```
-

@@ -13,3 +13,4 @@ extensions including I&sup2;C support, and the addition of geometric drawing fun
 If you need to drive the I&sup2;C version of this display from a RPi,
 this is the place to start.
 
+<!--more-->

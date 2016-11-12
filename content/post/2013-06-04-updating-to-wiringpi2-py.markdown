@@ -10,6 +10,8 @@ Phillip Howard and Gordon Henderson recently [announced](http://pi.gadgetoid.com
 the availability of [WiringPi2](http://wiringpi.com/) along with a new python wrapper
 [WiringPi2-Python](https://github.com/Gadgetoid/WiringPi2-Python).
 
+<!--more-->
+
 The python library name has changed from ```wiringpi``` to ```wiringpi2```, so any application
 code referencing the module needs to be updated.
 I've forked [py-gaugette](https://github.com/guyc/py-gaugette) to create

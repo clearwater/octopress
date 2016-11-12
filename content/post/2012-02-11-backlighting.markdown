@@ -9,8 +9,10 @@ categories:
 {{< img "/resources/thermo_backlit.png" right "LED Backlighting" >}}
 
 Today I added an LED backlight to my square gauge.
-I really like how light leaks from the grills at the top 
+I really like how light leaks from the grills at the top
 and bottom of gauge.
+
+<!--more-->
 
 I decided not to use RGB LEDs in this build due to size
 and pin-count constraints.

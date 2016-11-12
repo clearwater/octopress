@@ -1,5 +1,5 @@
 server:
-	hugo server --buildDrafts=true
+	hugo server --buildDrafts=false
 
 generate:
-	hugo --buildDrafts=true
+	hugo --buildDrafts=false

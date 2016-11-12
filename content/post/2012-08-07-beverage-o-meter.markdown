@@ -14,4 +14,6 @@ Fun, whimsical, and beautifully housed too.  His project uses a Switec stepper f
 uses the [SwitecX25](https://github.com/clearwater/SwitecX25) library.
 Check out his blog and source code [here](http://pmb.neongrit.net/blog/?p=116).
 
+<!--more-->
+
 {{< img "http://pmb.neongrit.net/blog/wp-content/uploads/2012/07/IMG_9296_v1-480x428.jpg" right "Photo by Phil Babridge" >}}

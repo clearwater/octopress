@@ -8,11 +8,13 @@ categories:
 ---
 
 {{< img "/resources/2012-11-08/ssd1306.jpg" right >}}
- 
+
 Adafruit's lovely little [128x32 monochrome SPI OLED module](http://www.adafruit.com/products/661)
 uses a SSD1306 driver chip ([datasheet](http://www.adafruit.com/datasheets/SSD1306.pdf)),
 and Adafruit have published [excellent tutorials](http://learn.adafruit.com/monochrome-oled-breakouts) and
 [libraries](https://github.com/adafruit/Adafruit_SSD1306) for driving this from an Arduino.
+
+<!--more-->
 
 When [asked in their forum](http://adafruit.com/forums/viewtopic.php?f=47&t=33040)
 about Raspberry Pi support, Adafruit have said
@@ -23,7 +25,7 @@ switch to the Raspberry Pi, so I need to get this display working with the Pi.
 To that end, I've partially ported Adafruit's SSD1306 library to Python for the Raspberry Pi.  The port is partial
 in that:
 
- 1. it only supports the 128x32 SPI module (unlike the original that supports the I&sup2;C and 128x64 modules) and 
+ 1. it only supports the 128x32 SPI module (unlike the original that supports the I&sup2;C and 128x64 modules) and
  2. it only supports pixel and text drawing functions (no geometric drawing functions).
 
 Signal Levels
@@ -46,15 +48,15 @@ be pulled low, so if you ever looked at the data you would see all zeros.
 
 The __D/C__ (Data/Command) signal on the module is not part of the SPI specification, and it took a little
 experimenting to understand exactly what it is used for.  The data sheet says
-_"When it is pulled HIGH (i.e. connect to VDD), the data 
-at D\[7:0\] is treated as data. When it is pulled LOW, the data at D\[7:0\] will be transferred 
+_"When it is pulled HIGH (i.e. connect to VDD), the data
+at D\[7:0\] is treated as data. When it is pulled LOW, the data at D\[7:0\] will be transferred
 to the command register."_
 
 Initially I supposed _data_ to include the
 argument bytes that follow the opcode when sending multi-byte commands.  For example the "Set Contrast Control"
 command consists of a one-byte opcode (0x81) followed by a one-byte contrast value, so I was sending
 the first byte with D/C high, and pulling it low for the argument byte.  Wrongo!  That's not what they
-mean by _data_; __keep the D/C line high for all bytes in a command, and pull it low 
+mean by _data_; __keep the D/C line high for all bytes in a command, and pull it low
 when blitting image data into the image memory buffer__.  Simple as that.
 
 Platform
@@ -70,18 +72,18 @@ Wire Up
 -------
 
 Here's how I've wired it up.  You can freely change the GPIOs for D/C and Reset.
-{%img /resources/2012-11-08/raspberrypi_and_ssd1306.jpg %}
+{{< img "/resources/2012-11-08/raspberrypi_and_ssd1306.jpg" >}}
 
 Test Code
 ----
 
 __Note that pin numbers passed in the constructor are
 the [wiring pin numbers](https://projects.drogon.net/raspberry-pi/wiringpi/pins/),
-not the connector pin numbers!__ 
+not the connector pin numbers!__
 For example I have Reset wired to connector pin 8, which is _BCP gpio 14_, but _wiringPi pin 15_.
 It's confusing, but just refer to the [wiringPi GPIO table](https://projects.drogon.net/raspberry-pi/wiringpi/pins/).
 
-The python library for the SSD1306 has been rolled into the 
+The python library for the SSD1306 has been rolled into the
 [py-gaugette library](https://github.com/guyc/py-gaugette) available on github.
 
 The test code below vertically scrolls vertically between two display buffers, one
@@ -119,7 +121,7 @@ while True:
         time.sleep(0.2)
     else:
         time.sleep(0.5)
-        
+
     # vertically scroll to switch between buffers
     for i in range(0,32):
         offset = (offset + 1) % 64
@@ -133,12 +135,8 @@ About Fonts
 
 {{< img "/resources/2012-11-08/steve-jobs-does-not-approve.jpg" right >}}
 
-This test code uses the 5x7 bitmap font from the 
+This test code uses the 5x7 bitmap font from the
 [Adafruit GFX library](https://github.com/adafruit/Adafruit-GFX-Library/blob/master/glcdfont.c)
 scaled to x2 and x3. It works, but __Steve Jobs would
 not approve!__  It isn't taking advantage of the very high resolution of these
 lovely little displays.  Larger fonts with kerning would be a great addition.
-
-
-
-

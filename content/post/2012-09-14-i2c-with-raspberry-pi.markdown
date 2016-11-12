@@ -15,6 +15,8 @@ to try this on a [Rasberry Pi](http://www.raspberrypi.org).  If it works, it wil
 a simple and very inexpensive method for driving analog gauges from the Raspberry Pi without
 the need for high-current drivers.
 
+<!--more-->
+
 The MCP23008 provides 8 I/O lines controlled via an I&sup2;C interface.  
 The [datasheet is available here](/resources/2012-09-14/MCP23008.pdf).
 The pins are rated to source and sink 20mA each.  That's around half what an Arduino offers, but
@@ -36,7 +38,7 @@ Insert a 4GB SD card and figure out it's device name using
 `diskutil list`.  It is easy to recognise the SD card in the list below as `/dev/disk2`
 because of the 4GB size.
 
-{{< highlight text >}}
+{{< code >}}
 euramoo:misc guy$ diskutil list
 /dev/disk0
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -55,21 +57,21 @@ euramoo:misc guy$ diskutil list
    1:             Windows_FAT_32                         58.7 MB    disk2s1
    2:                      Linux                         3.9 GB     disk2s2
 
-{{< /highlight >}}
+{{< /code >}}
 
 Next unmount the disk with `diskutil unmountDisk`.
 
-{{< highlight text >}}
+{{< code text >}}
 $ diskutil unmountDisk /dev/disk2
 Unmount of all volumes on disk2 was successful
-{{< /highlight >}}
+{{< /code >}}
 
 Download Occidentalis from [AdaFruit](http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro).
 I'm using [Version 0.2](http://learn.adafruit.com/adafruit-raspberry-pi-educational-linux-distro/occidentalis-v0-dot-2).
 Unzip it, verify the checksum, and copy it to the SD card.  I know this a big file, but I was still surprised it took half an hour
 to write to the SD card.
 
-{{< highlight text >}}
+{{< code text >}}
 $ mv ~/Downloads/Occidentalisv02.zip .
 
 $ unzip Occidentalisv02.zip
@@ -85,7 +87,7 @@ Password:
 2479+1 records in
 2479+1 records out
 2600000000 bytes transferred in 2099.207512 secs (1238563 bytes/sec)
-{{< /highlight >}}
+{{< /code >}}
 
 Step 2 - Test the Boot Image
 -----
@@ -96,7 +98,7 @@ so you can login headless if you can figure out the IP address from the DHCP ser
 Confirm that the I&sup2;C tools are installed and working by doing an I&sup2;C
 scan of bus 0.  You should see nothing on the bus, as shown below.
 
-{{< highlight text >}}
+{{< code text >}}
 
 pi@raspberrypi ~ $ sudo i2cdetect -y  0
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -109,18 +111,18 @@ pi@raspberrypi ~ $ sudo i2cdetect -y  0
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --   
 
-{{< /highlight >}}
+{{< /code >}}
 
 Step 3 - Wire Up
 ----
 
 The Raspberry Pi expansion port pinout is:
 
-{% img /resources/2012-09-14/raspberrypi.png %}
+{{< img "/resources/2012-09-14/raspberrypi.png" >}}
 
 The MCP23008 pins are:
 
-{% img /resources/2012-09-14/MCP23008.png %}
+{{< img "/resources/2012-09-14/MCP23008.png" >}}
 
 There are 4 wires connect the RPi to the MCP23008:
 
@@ -157,7 +159,7 @@ Power up and repeat the `i2cdetect` command.  This time you should
 see device on the bus.  Mine is at 0x20 because I pulled all of the
 address lines low.
 
-{{< highlight text >}}
+{{< code text >}}
 
 pi@raspberrypi ~ $ sudo i2cdetect -y  0
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -170,22 +172,22 @@ pi@raspberrypi ~ $ sudo i2cdetect -y  0
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --                         
 
-{{< /highlight >}}
+{{< /code >}}
 
 You can read the IODIR register (0) which should return all 1's
 (all pins configured as inputs), and the OLAT register (10 or 0xA) which should return all 0's.
 
-{{< highlight text >}}
+{{< code text >}}
 pi@raspberrypi ~ $ sudo i2cget -y 0 0x20 0
 0xff
 pi@raspberrypi ~ $ sudo i2cget -y 0 0x20 10
 0x00
-{{< /highlight >}}
+{{< /code >}}
 
 Step 5 - Spin a Motor!
 ----
 
-{%img /resources/2012-09-14/raspberrypi_and_mcp23008.png %}
+{{< img "/resources/2012-09-14/raspberrypi_and_mcp23008.png" >}}
 
 I wired up a VID29 to pins GP0 to GP3 on the driver chip and kludged
 together some C code to cycle through the 6 signal states used to drive the motor.
@@ -193,7 +195,7 @@ I'm using a VID29 motor with the [stops removed](/blog/2012/04/04/pulling-out-th
 so I can let it spin continuously without hitting the stop.
 The [test code is here](https://gist.github.com/3735664).
 
-{{< highlight text >}}
+{{< code text >}}
 $ sudo ./i2ctest
 Register 0 = 255
 Register 1 = 0
@@ -210,7 +212,7 @@ done
 error writing i2c gpio register
 error writing i2c gpio register
 ...
-{{< /highlight >}}
+{{< /code >}}
 
 Yeah, so those errors aren't good.  The results of reading the 10 registers
 look fine, but as soon as it starts trying to turn the motor we are
@@ -225,7 +227,7 @@ so used that to power the MCP23008.  Problem solved, motor turns, errors are gon
 
 This is the final circuit.
 
-{% img /resources/2012-09-14/circuit_bb.png %}
+{{< img "/resources/2012-09-14/circuit_bb.png" >}}
 
 
 Speed Tests

@@ -12,6 +12,8 @@ Check out this great new [Tindie project](https://tindie.com/shops/TheRengineer/
 launched by [The Renaissance Engineer](http://www.therengineer.com/) [Adam Fabio](https://twitter.com/ajfabio)
 for a new breakout board designed for Switec motors and clones.
 
+<!--more-->
+
 {{< img "/resources/2013-01-18/analog-gauge-stepper-kit.jpg" right >}}
 The breakout board incorporates flyback diodes to protect your circuit from inductive kickback, and
 the also serves as a convenient base to mount the motors.  The kit includes

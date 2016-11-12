@@ -11,6 +11,8 @@ I recently [removed the internal stops](/blog/2012/04/04/pulling-out-the-stops/)
 
 {{< img "/resources/2012-05-08/accel-test.jpg" right >}}
 
+<!--more-->
+
 Methodology
 -----------
 
@@ -20,7 +22,7 @@ After some experimentation I selected a delay of 1000&mu;S per step for the coun
 
 Note: Be sure your needle is tight!  Until I eliminated needle slippage, my results showed anomalous drifts both above and below the expected values.
 
-Constant Speed Test 
+Constant Speed Test
 -------------------
 
 In this test the motor is turned at constant speed to identify the maximum constant speed that the motor will respond to.  The speed is set by manipulating the motor accelleration table.  I also recorded the total sweep time with the ```micros()``` function to determine the variation between the programmed inter-step time and the actual inter-step time.
@@ -49,7 +51,7 @@ Delay &mu;S | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 | Actual &mu;S | Steps/
 800 | 500 | 500 | 500 | 500 | 500 | 810 | 1234 | 411
 
 
-Results 
+Results
 -------
 
 The results show that with a programmed step period 600&mu;S or less the motor could not advance with each step - and in fact often moved backwards.  At 620&mu;S the results were unreliable, and at 640&mu;S and above the motor behaved reliably.
@@ -68,4 +70,3 @@ Test Code
 ---------
 
 Here's the full [source code](https://gist.github.com/2590599/73ff197ea22c312335c6d02cd9c1333eb238db50) for this test.
-

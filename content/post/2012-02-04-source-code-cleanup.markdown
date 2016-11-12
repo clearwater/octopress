@@ -10,21 +10,15 @@ categories:
 I've separated the Switec X25 motor driver code into a separate
 library repository on GitHub.  This will make it easier to use
 the driver library in other applications.
+<!--more-->
 
 [SwitecX25 Library](https://github.com/clearwater/SwitecX25)
 --------
 This contains only the Switec X25 driver.
 
-[Gaugette](https://github.com/clearwater/gaugette) 
+[Gaugette](https://github.com/clearwater/gaugette)
 --------
 This is an arduino application that controls analog
 gauges by interpreting commands received over the serial interface.
-To compile Gaugette you will now need to add the SwitecX25 library 
+To compile Gaugette you will now need to add the SwitecX25 library
 to your Arduino libraries folder.
-
-
-   
-
-
-
-

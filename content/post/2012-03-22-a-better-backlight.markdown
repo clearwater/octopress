@@ -15,7 +15,9 @@ cast a shadow.
 These photos show the LEDs at 100% brightness, but they are
 on PWM pins so I can control the intensity from the Arduino code.
 
-{% img center /resources/backlight2.png %}
+{{< img "/resources/backlight2.png" center >}}
+
+<!--more-->
 
 It is subtle, but in the next photo you can see the difference
 between the first and second gauge.  The right-most gauge
@@ -23,10 +25,10 @@ has a dark spot between 30 and 40.
 It's fine, and the light spread isn't that even anyway,
 so I'm going to call it 'character'.
 
-{% img center /resources/backlight-pair.png %}
+{{< img "/resources/backlight-pair.png" center >}}
 
 The mounting panel is made from salvaged hardwood fence pickets.  It's red stringybark, very hard and with nice colour and grain definition.
 
-{% img center /resources/build1-mount.png %}
+{{< img "/resources/build1-mount.png" center >}}
 
 I've wired the 3-position switch to control "off", "on" and "on with backlight".

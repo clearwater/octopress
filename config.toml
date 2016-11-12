@@ -5,10 +5,10 @@ title = "Gaugette"
 theme = "hugo-octopress"
 
 # Number of blog posts displayed in each page
-paginate = 6
+paginate = 5
 
 pygmentsuseclasses = false
-pygmentsstyle = "vim"
+#pygmentsstyle = "default"
 
 # You need to install Solarized from https://github.com/john2x/solarized-pygment.git
 # Octopress blog used Solarized_dark
@@ -72,7 +72,7 @@ post = "/:year/:month/:day/:title/" # change the post URL to look like the old o
 
     # --- Start sidebar options ---
     # Number of recent posts that will be shown in the sidebar - set to 0 or remove to hide this section
-    sidebarRecentLimit = 10
+    sidebarRecentLimit = 50
 
     # Sidebar header - passed to markdownify so you can write markdown here
     sidebarHeader = ""
@@ -116,7 +116,7 @@ post = "/:year/:month/:day/:title/" # change the post URL to look like the old o
     searchEngineURL = "https://www.google.com/search"
 
     # Text of the "Continue Reading" label. &rarr; == right arrow, but it gets messed up in the string so we will add it to index.html manually
-    continueReadingText = "Would you like to know more?"
+    continueReadingText = "Read article"
 
     # Google analytics code
     googleAnalytics = "google analytics"

@@ -14,6 +14,8 @@ The encoder I'm using is a 2-bit quadrature-encoded rotary encoder,
 [available from Adafruit](http://www.adafruit.com/products/377).  
 The [datasheet is here](http://www.adafruit.com/datasheets/pec11.pdf).
 
+<!--more-->
+
 The documentation for this encoder says that it gives 24 pulses per 360&deg; rotation,
 which I interpreted to mean 24 resolvable positions, but after trying it I see that
 it has 24 detent positions, and between each detent is a full 4-step quadrature cycle,
@@ -21,7 +23,7 @@ so there are actually 96 resolvable steps per rotation.  This unit also includes
 a momentary switch which is closed when the button is pushed down.  Takes a solid
 push to close the switch.
 
-{% img /resources/2013-01-14/rotary-encoder.png %}
+{{< img "/resources/2013-01-14/rotary-encoder.png" center >}}
 
 The diagram above shows how I've connected the rotary encoder to the Raspberry Pi.
 I'm using pin 9, one of the "Do Not Connect" (DNC) pins to get a second ground pin for convenience.
@@ -30,7 +32,7 @@ to keep the extra power and ground pins unchanged in future releases, so
 I think it is safe to publish circuits using them.  Right?  Here's a pinout
 highlighting the functions of the DNC pins, along with the wiringpi pin numbers.
 
-{% img /resources/pi-pinout.png %}
+{{< img "/resources/pi-pinout.png" >}}
 
 Decoder Logic
 -------------

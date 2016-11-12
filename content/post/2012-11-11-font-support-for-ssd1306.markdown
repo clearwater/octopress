@@ -9,10 +9,12 @@ categories:
 
 {{< img "/resources/2012-11-08/ssd1306.jpg" right >}}
 The first release of the SSD1306 support library [py-gaugette](https://github.com/guyc/py-gaugette)
-used the 5x7 pixel fonts from the 
+used the 5x7 pixel fonts from the
 [Adafruit GFX library](https://github.com/adafruit/Adafruit-GFX-Library/blob/master/glcdfont.c).
 That's a fine and compact font, but wouldn't it be nice to have some pretty high-res fonts
 to take advantage of the memory and resolution we have to work with?
+
+<!--more-->
 
 Generating Font Bitmaps
 -----------------------
@@ -75,9 +77,9 @@ bitmaps = (
 
     # @32 '#' (9 pixels wide)
     0x00, 0x00, #          
-    0x11, 0x00, #    O   O 
-    0x11, 0x00, #    O   O 
-    0x11, 0x00, #    O   O 
+    0x11, 0x00, #    O   O
+    0x11, 0x00, #    O   O
+    0x11, 0x00, #    O   O
     0x22, 0x00, #   O   O  
     0xFF, 0x80, # OOOOOOOOO
     0x22, 0x00, #   O   O  
@@ -130,7 +132,7 @@ through an image that is wider than the display.  We need to do it in software.
 It turns out that blitting memory from the Pi to the SSD1306 over SPI is pretty fast; fast enough
 to get a reasonable horizontal scroll effect by blitting complete frames from the Pi's
 memory to the SSD1306.  There's just one thing - the default memory mode of the
-SSD1306 is [row-major](http://en.wikipedia.org/wiki/Row-major_order), and 
+SSD1306 is [row-major](http://en.wikipedia.org/wiki/Row-major_order), and
 for horizontal scrolling we really want to send a __vertical slice__ of the memory buffer
 over SPI.  To avoid buffer manipulation I switched the Pi-side memory buffer to use
 [column-major order](http://en.wikipedia.org/wiki/Column-major_order#Column-major_order),

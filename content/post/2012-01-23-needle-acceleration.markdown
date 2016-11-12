@@ -11,7 +11,7 @@ categories:
 My first cut at the [Switec X25 library](https://github.com/clearwater/gaugette)
 stepped the needle at a constant speed.  You can see the constant speed
 motion in the [original video](http://www.youtube.com/watch?v=vwAxRk_5oXA).
-
+<!--more-->
 {{< youtube  uNLySm71OBc >}}
 
 I've updated the library to support acceleration and deceleration, partly because
@@ -25,13 +25,13 @@ calculations.  This works okay, but is unnecessarily compute-intensive.
 
 The Switec X25 library supports multiple motors
 and no doubt this computation will become a factor when I try to drive more than
-one motor, so I'll have to address that at some point. 
+one motor, so I'll have to address that at some point.
 
 One interesting aspect of the control logic is that the calculations are done at the start
 of each step, in distance-domain rather than in time domain like most simulations.
 This means the calculations must be done more frequently at higher needle
 speeds.  This is going to set an upper bound on maximum step rate.
 
-When it does become an issue, 
+When it does become an issue,
 I think I could replace the entire floating point calculation with a small table of pre-computed
 (step-count, step-period) pairs with little perceptible difference.

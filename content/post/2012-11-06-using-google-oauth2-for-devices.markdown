@@ -11,6 +11,8 @@ I've been working on a Raspberry Pi based device that needs to log data to a Goo
 There are some fine classes like [gdata](http://code.google.com/p/gdata-python-client/) and [gspread](https://github.com/burnash/gspread)
 that do just this.
 
+<!--more-->
+
 However if you read the [tutorial at Adafruit](http://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/connecting-to-google-docs)
 which uses the [gspread library](http://pypi.python.org/pypi/gspread/) you will see that
 it uses the ClientLogin API for authentication, and so somewhere you need to include your Google username and password in plain text.
@@ -34,7 +36,7 @@ It turns out the Google's OAuth2 implementation has a great alternative for embe
  5. The user enters the code to Google's form, and confirms the level of permissions the application has requested,
  6. Your application gets a response from the web service it has been polling with an __access_token__ and a __refresh_token__.
  7. You pass this __access_token__ in the header of all API requests
- 
+
 The __access_token__ will expire after a relatively short time (1 hour?).  When the token expires,
 it can be refreshed by making another API call using the __refresh_token__.  This returns a fresh __access_token__
 but does not return an udpated __refresh_token__.  The original __refresh_token__ does not expire.
@@ -53,7 +55,7 @@ headers = {
 client = gdata.spreadsheet.service.SpreadsheetsService(additional_headers=headers)
 ```
 The extra header will be something like ```Authorization: Bearer 1/fFBGRNJru1FQd44AzqT3Zg```.
-I've wrapped up what I've figured out so far into an 
+I've wrapped up what I've figured out so far into an
 [oauth class](https://github.com/guyc/py-gaugette/blob/master/src/gaugette/oauth.py)
 in the [python gaugette library "py-gaugette"](https://github.com/guyc/py-gaugette).
 
@@ -90,7 +92,7 @@ except gdata.service.RequestError as error:
         worksheets_feed = gd_client.GetWorksheetsFeed(spreadsheet_id)
     else:
         raise
-    
+
 worksheet_id = worksheets_feed.entry[0].id.text.rsplit('/',1)[1]
 
 now = datetime.datetime.now().isoformat(' ')

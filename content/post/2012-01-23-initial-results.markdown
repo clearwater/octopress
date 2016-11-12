@@ -20,7 +20,7 @@ too short and too narrow to engage with the connectors.  For my first harness I 
 a floppy disk cable connector into two 4-hole sections and soldered wire to the first and fourth
 pins.  It worked fine but it is pretty bulky, and the metal contacts in the connector did not solder
 very easily.  For now I just pushed the tinned ends of the wires directly into the Arduino connectors.
-
+<!--more-->
 I wrote some code for the Arduino to step the motor using the IO pattern established
 in [this post](http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1260978962)
 and a quick ruby script to query my pfSense firewall to get some live data to test with.

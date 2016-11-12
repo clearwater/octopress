@@ -12,7 +12,7 @@ I've [committed](https://github.com/guyc/py-gaugette/blob/19bf43f29fcc02d8865a7a
 a better version of ```rotary_test.py``` that writes out a
 comprehensive table of state information, updated whenever anything changes.
 
-<br clear="both"/>
+<br clear="both"/><!--more-->
 
 The output looks like this:
 

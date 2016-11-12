@@ -14,6 +14,8 @@ For Arduino IDE version 1.0 and later you can store user-contributed libraries i
 of your sketch directory named 'libraries'.  In fact you really should install them there
 to ensure that they persist when you upgrade the IDE.
 
+<!--more-->
+
 So figure out where your project directory is (under OSX this is available in the ```Arduino -> Preferences``` menu), create a subdirectory called ```libraries``` with the project directory.  The name is important, so use exactly that.  Then inside that libraries directory checkout the SwitecX25 library.  You should end up with this structure:
 ```
 libraries

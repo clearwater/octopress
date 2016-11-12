@@ -13,17 +13,19 @@ Manufacturers
 I am aware of three companies manufacturing compatible motors.  All appear to
 produce a good-quality product.
 
+<!--more-->
+
 ### Switec {{< img "/resources/2012-05-25/x25-168.jpg" right >}}
 Switec was originally the technology arm of the Swiss watch company Swatch.
 The stepper business was sold off to Singapore-based [Juken Technology](http://jukenswisstech.com/) in 2009.
 Switec motors are white, and have part numbers starting with "X".
 
-###VID {{< img "/resources/2012-05-25/vid29-02.jpg" right >}}
+### VID {{< img "/resources/2012-05-25/vid29-02.jpg" right >}}
 Hong Kong based [VID](http://www.vid.wellgain.com/product.aspx) also manufacture a range
 of similar motors.  Their motors are black, and have a black model number starting with "vid".
 <br clear="right"/>
 
-###MCR {{< img "/resources/2012-05-25/mr1108.jpg" right >}} 
+### MCR {{< img "/resources/2012-05-25/mr1108.jpg" right >}}
 Chinese company [MCR Motor](http://www.mcrmotor.com/en/) manufacture a range of compatible motors.
 Their motors are white. with part numbers starting with "MR".
 <br clear="right"/>

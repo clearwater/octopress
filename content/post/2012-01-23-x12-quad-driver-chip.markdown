@@ -12,13 +12,13 @@ describes the X12 family of driver chips which allow
 up to 4 Switec motors to be controlled over a 3-wire serial interface.
 I like the look of these for keeping the I/O count down, and offloading
 a bunch of processing from the Arduino.
-
+<!--more-->
 However I have been unable to find a supplier for X12 quad driver chips.
 It seems that they were available until recently
 from Swatch subsidiary Microcomponents Ltd. at microcomponents.ch,
-but after Swatch 
+but after Swatch
 [sold the stepping motor business](http://www.swatchgroup.com/en/services/archive/2009/swatch_group_sale_of_microcomponents_automotive_business_activities_to_juken_technology)
-to Singapore-based [Juken Techonology](http://www.jukenswisstech.com) in 2009, 
+to Singapore-based [Juken Techonology](http://www.jukenswisstech.com) in 2009,
 that website disappeared.
 
 There appear to be several other manufacturers making clones of this chip.  Here's what I've found so far:

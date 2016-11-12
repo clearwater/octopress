@@ -14,6 +14,8 @@ a Google Docs spreadsheet.
 
 ![](/resources/2013-02-03/imgp3555.jpg)
 
+<!--more-->
+
 ## Motivation
 
 Whenever I have to record time against projects, I find it really hard to
@@ -113,11 +115,9 @@ was made from the back of a GU10 light bulb. The bulb glass is thick and
 diffuses the light nicely, and I thought the terminals would make cool
 capacitive switches.
 
-<iframe allowfullscreen="allowFullScreen" frameborder="0" height="390" mozallowfullscreen="mozallowfullscreen" src="http://www.youtube.com/embed/tRBiQ0ZXFZM" webkitallowfullscreen="webkitAllowFullScreen" width="640"></iframe>
-
 {{< youtube tRBiQ0ZXFZM >}}
 
-<img src="/gaugette/resources/2013-02-03/imgp3560.jpg" style="float:right;" />
+{{< img "/resources/2013-02-03/imgp3560.jpg" right >}}
 
 I liked that a lot, but ultimately settled on a long oven light which had a more
 compact footprint. It gives elegant curving internal reflections which look
@@ -187,11 +187,9 @@ Fortunately a recent firmware update provided a tool that allows us to measure
 the CPU temperature in code, so I did a little experiment. I recorded the
 temperature using [vcgencmd](http://elinux.org/RPI_vcgencmd_usage).
 
-``` bash
+{{< code >}}
 while :; do /opt/vc/bin/vcgencmd measure_temp; sleep 3; done
-```
-
-    $ go get
+{{< /code >}}
 
 I ran this loop from a cold boot for 25 minutes, first with the top off, then
 again (after letting the system cool down) with the case closed up tight. For
