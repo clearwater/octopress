@@ -27,7 +27,7 @@ After playing with the
 I started thinking it would be fun to have a couple of analog gauges
 mounted on the wall somewhere to show system health indication; maybe network bandwidth or
 web traffic?
-{{< img src="http://blog.skytee.com/wp-content/uploads/2010/11/B-300x277.jpg" pos="right" alt="TorrentMeter by Skytee" >}}
+{{< img src="http://blog.skytee.com/wp-content/uploads/2010/11/B-300x277.jpg" pos="right" label="TorrentMeter by Skytee" >}}
 Of course I've seen the very beautiful
 [TorrentMeter by Skytee](http://blog.skytee.com/2010/11/torrentmeter-a-steampunk-bandwidth-meter/)
 which is so pretty it makes me weep, but beautiful brass antique voltmeters are in short supply
@@ -41,7 +41,7 @@ But it is quite bulky and noisy, so I started looking for something better.
 The Switec X25 Stepper Motor
 ----------------------------
 
-{{< img src="/resources/Switec_X25_168.jpg" pos="right" alt="Switec X26.168 Stepper Motor" >}}
+{{< img src="/resources/Switec_X25_168.jpg" pos="right" label="Switec X26.168 Stepper Motor" >}}
 I noticed a lot of sellers on eBay selling tiny Switec X25
 motors as replacements for GM auto instrument clusters.  They were developed
 by the technology arm of Swatch, so I figured they should be low power and

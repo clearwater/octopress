@@ -6,7 +6,7 @@ date: "2012-01-26T11:03:00+10:00"
 categories:
  - Switec X25
 ---
-{{< img src="/resources/shiny_things.jpg" pos="right" alt="Pretty Shiny Things" >}}
+{{< img src="/resources/shiny_things.jpg" pos="right" label="Pretty Shiny Things" >}}
 I've been looking around on-line and in stores for some parts to
 make some classy steam-punk gauges.
 After a lot of searching I came

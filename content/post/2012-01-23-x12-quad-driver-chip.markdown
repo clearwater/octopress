@@ -6,7 +6,7 @@ date: "2012-01-19T17:10:00+10:00"
 categories:
  - Switec X25
 ---
-{{< img src="/resources/X12_Quad_Driver.png" pos="right" alt="Switec X12.017 Quad Driver" >}}
+{{< img src="/resources/X12_Quad_Driver.png" pos="right" label="Switec X12.017 Quad Driver" >}}
 The {{< xref src="/resources/switec/X25_xxx_01_SP_E-1.pdf" label="X25 data sheet" >}}
 describes the X12 family of driver chips which allow
 up to 4 Switec motors to be controlled over a 3-wire serial interface.

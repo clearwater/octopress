@@ -11,7 +11,7 @@ I've found it really handy to make harnesses from 4-wire CD audio
 cables.  My harnesses use push-on connectors at the motor end
 so I never [accidentally cook the motor](http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1260978962) by soldering to the motor pins.
 
-!{{< xref src="/resources/2012-04-04/imgp9232.jpg" label="image" >}}
+{{< img src="/resources/2012-04-04/imgp9232.jpg" label="completed wiring harness" >}}
 
 <!--more-->
 
@@ -22,7 +22,7 @@ these over the years, so I'm glad to have a use for them.
 
 I also use [0.1" breakaway headers](https://www.adafruit.com/products/392) and heatshrink tubing, both from AdaFruit.
 
-!{{< xref src="/resources/2012-04-04/imgp9227.jpg" label="image" >}}
+{{< img src="/resources/2012-04-04/imgp9227.jpg" label="the parts" >}}
 
  - Chop the audio cable in half (each half makes one wiring harness),
  - Strip and tin the wires on the cut end,
@@ -30,12 +30,12 @@ I also use [0.1" breakaway headers](https://www.adafruit.com/products/392) and h
  - Solder the wires to the header _with the two black wires in the center positions_,
  - Protect the connections with heat-shrink tubing.
 
-!{{< xref src="/resources/2012-04-04/imgp9228.jpg" label="image" >}}
+{{< img src="/resources/2012-04-04/imgp9228.jpg" label="assembly" >}}
 
  - Pull up the plastic tabs on the JST connector and slide the crimped terminator out of the block,
  - Use pliers to close the crimp connectors a little, but don't crush them entirely. The pins on the Switec motors are really small, so you need to squeeze it down a little to create a tight fit.
 
-!{{< xref src="/resources/2012-04-04/imgp9229.jpg" label="image" >}}
+{{< img src="/resources/2012-04-04/imgp9229.jpg" label="assembly complete" >}}
 
 You'll notice that these harnesses have two black wires, which would
 normally be a bit annoying.  However it turns out that the wires to

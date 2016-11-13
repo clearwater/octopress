@@ -16,4 +16,4 @@ Check out his blog and source code [here](http://pmb.neongrit.net/blog/?p=116).
 
 <!--more-->
 
-{{< img src="http://pmb.neongrit.net/blog/wp-content/uploads/2012/07/IMG_9296_v1-480x428.jpg" pos="right" alt="Photo by Phil Babridge" >}}
+{{< img src="http://pmb.neongrit.net/blog/wp-content/uploads/2012/07/IMG_9296_v1-480x428.jpg" pos="right" label="Photo by Phil Babridge" >}}

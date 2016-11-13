@@ -21,7 +21,7 @@ Okay, time to figure out if the stops can be removed.  Note that I'm working
 on a VID-29 clone, not a genuine Switec X25.168 here.
 There are 4 tiny screws that open the case revealing this:
 
-!{{< xref src="/resources/2012-04-04/imgp9223.jpg" label="image" >}}
+{{< img src="/resources/2012-04-04/imgp9223.jpg" label="case opened" >}}
 
 <!--more-->
 
@@ -29,11 +29,11 @@ The drive-shaft and attached gear sit loose and can be lifted out.  Flipping the
 gear over reveals the mechanism for the stop; a raised trapezoidal bump on the gear face
 that stops against a matching protrusion at the bottom of the case.
 
-!{{< xref src="/resources/2012-04-04/imgp9225.jpg" label="image" >}}
+{{< img src="/resources/2012-04-04/imgp9225.jpg" label="stop exposed" >}}
 
 I cut off the stop with a Stanley knife, and filed it flat with a small file.
 
-!{{< xref src="/resources/2012-04-04/imgp9226.jpg" label="image" >}}
+{{< img src="/resources/2012-04-04/imgp9226.jpg" label="stop removed" >}}
 
 Reassembly was easy, and bugger me, it works.
 

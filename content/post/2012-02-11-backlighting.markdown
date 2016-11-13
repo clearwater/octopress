@@ -6,7 +6,7 @@ date: "2012-02-11T17:14:00+10:00"
 categories:
  - Switec X25
 ---
-{{< img src="/resources/thermo_backlit.png" pos="right" alt="LED Backlighting" >}}
+{{< img src="/resources/thermo_backlit.png" pos="right" label="LED Backlighting" >}}
 
 Today I added an LED backlight to my square gauge.
 I really like how light leaks from the grills at the top
@@ -26,7 +26,7 @@ I tried grinding back the lens and using blobs of hot-glue to make
 the lighting more diffuse, but in the end I wasn't convinced
 it was an improvement, and so the simpler design won out.
 
-{{< img src="/resources/thermo_led.png" pos="left" alt="with face removed" >}}
+{{< img src="/resources/thermo_led.png" pos="left" label="with face removed" >}}
 
 I soldered the 330&#8486; current-limiting resistor to the LED.
 I trimmed the leads on the LED and resistor really short to get it

@@ -7,7 +7,7 @@ categories:
  - Switec X25
 ---
 
-{{< img src="/resources/100k_square_dial.png" pos="right" alt="Dial Face Artwork" >}}
+{{< img src="/resources/100k_square_dial.png" pos="right" label="Dial Face Artwork" >}}
 I made dial faces for a couple of the square gauges built
 in [Build Number One](/blog/2012/01/28/build-number-one/).  Nearly
 ready to install these guys.  
@@ -39,7 +39,7 @@ over the original dial plate so that the needle just clears
 the face, but if the paper will support itself I could
 backlight it with an LED which might look nice in the dark.
 
-{{< img src="/resources/fiskars_hole_punch.png" pos="left" alt="Fiskars Hole Punch" >}}
+{{< img src="/resources/fiskars_hole_punch.png" pos="left" label="Fiskars Hole Punch" >}}
 One thing that had me stuffed is how to punch a neat hole in the paper for
 the drive shaft.  A standard hole-punch makes big holes and can't reach
 far enough from the edge of the paper.  Drilling would leave messy edges.  Scouring
@@ -48,7 +48,7 @@ the aisles at Officeworks I found a
 size is 3.2mm (1/8").  The downside is the set of 3 cost about $25.  Anyway they work a treat and now
 I have some crafty hole punches.
 
-{{< img src="/resources/finished_square_face.png" pos="right" alt="Custom Dial Face" >}}
+{{< img src="/resources/finished_square_face.png" pos="right" label="Custom Dial Face" >}}
 I tried printing the dials with an ink-jet.  That
 seemed okay until I mounted it in the gauge and I found
 that at certain angles the metallic finish

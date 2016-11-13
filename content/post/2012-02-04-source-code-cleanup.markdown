@@ -6,7 +6,7 @@ date: "2012-02-04T11:38:00+10:00"
 categories:
  - Switec X25
 ---
-{{< img src="/resources/dial_parts.png" pos="right" alt="Separation Anxiety" >}}
+{{< img src="/resources/dial_parts.png" pos="right" label="Separation Anxiety" >}}
 I've separated the Switec X25 motor driver code into a separate
 library repository on GitHub.  This will make it easier to use
 the driver library in other applications.

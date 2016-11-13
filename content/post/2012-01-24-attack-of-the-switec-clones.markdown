@@ -6,14 +6,14 @@ date: "2012-01-24T09:29:00+10:00"
 categories:
  - Switec X25
 ---
-{{< img src="/resources/X25_clone.png" pos="right" alt="Switec Clones" >}}
+{{< img src="/resources/X25_clone.png" pos="right" label="Switec Clones" >}}
 When my eBay Switec X25.168 motors arrived, they didn't look at all like
 the white motors with the "Switec" branding that I've been seeing
 online.  I finally got around to tracking down what exactly they are.
 They have two identification numbers printed black on black:
 ``vid29-02p`` and ``d11455db``.
 <!--more-->
-{{< img src="/resources/VID29_diagram.png" pos="right" alt="Motor Diagram" >}}
+{{< img src="/resources/VID29_diagram.png" pos="right" label="Motor Diagram" >}}
 It turns out that the first number is the model, and these are in reality VID29 series stepper motors
 from [Hong Kong VID](http://www.vid.wellgain.com/product.aspx).  Interestingly their
 {{< xref src="/resources/vid/20091026113525_VID29_manual_EN-080606.pdf" label="data sheet" >}}
