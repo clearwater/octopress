@@ -6,7 +6,7 @@ date: "2012-02-11T17:14:00+10:00"
 categories:
  - Switec X25
 ---
-{{< img "/resources/thermo_backlit.png" right "LED Backlighting" >}}
+{{< img src="/resources/thermo_backlit.png" pos="right" alt="LED Backlighting" >}}
 
 Today I added an LED backlight to my square gauge.
 I really like how light leaks from the grills at the top
@@ -26,7 +26,7 @@ I tried grinding back the lens and using blobs of hot-glue to make
 the lighting more diffuse, but in the end I wasn't convinced
 it was an improvement, and so the simpler design won out.
 
-{{< img "/resources/thermo_led.png" left "with face removed" >}}
+{{< img src="/resources/thermo_led.png" pos="left" alt="with face removed" >}}
 
 I soldered the 330&#8486; current-limiting resistor to the LED.
 I trimmed the leads on the LED and resistor really short to get it
@@ -39,7 +39,7 @@ The cathode wire goes to a PWM pin on the Arduino, and the anode
 to ground.  I recently added LED control options to the Gaugette software
 to control the brightness.
 
-{{< img "http://www.battlecruiserzone.com/Boom1.jpg" right >}}
+{{< img src="http://www.battlecruiserzone.com/Boom1.jpg" pos="right" >}}
 ZOMG, now this gauge [totally looks like](http://totallylookslike.icanhascheezburger.com/) the
 helmets worn by the Viper pilots in the original 80's
 Battlestar Galactica series!

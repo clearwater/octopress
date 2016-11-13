@@ -27,7 +27,7 @@ After playing with the
 I started thinking it would be fun to have a couple of analog gauges
 mounted on the wall somewhere to show system health indication; maybe network bandwidth or
 web traffic?
-{{< img "http://blog.skytee.com/wp-content/uploads/2010/11/B-300x277.jpg" right "TorrentMeter by Skytee" >}}
+{{< img src="http://blog.skytee.com/wp-content/uploads/2010/11/B-300x277.jpg" pos="right" alt="TorrentMeter by Skytee" >}}
 Of course I've seen the very beautiful
 [TorrentMeter by Skytee](http://blog.skytee.com/2010/11/torrentmeter-a-steampunk-bandwidth-meter/)
 which is so pretty it makes me weep, but beautiful brass antique voltmeters are in short supply
@@ -41,7 +41,7 @@ But it is quite bulky and noisy, so I started looking for something better.
 The Switec X25 Stepper Motor
 ----------------------------
 
-{{< img "/resources/Switec_X25_168.jpg" right "Switec X26.168 Stepper Motor" >}}
+{{< img src="/resources/Switec_X25_168.jpg" pos="right" alt="Switec X26.168 Stepper Motor" >}}
 I noticed a lot of sellers on eBay selling tiny Switec X25
 motors as replacements for GM auto instrument clusters.  They were developed
 by the technology arm of Swatch, so I figured they should be low power and
@@ -49,7 +49,7 @@ pretty quiet.  Certainly they are cheap; under $5 each!
 
 The X25 motors have 6 steps per revolution, and a 180:1 gearbox, giving a
 resolution of 1/3 degree.
-The [data sheet](/resources/switec/X25_xxx_01_SP_E-1.pdf)
+The {{< xref src="/resources/switec/X25_xxx_01_SP_E-1.pdf" label="data sheet" >}}
 indicates they draw no more than 20mA per winding, which is low enough to source directly from the 5V
 Arduino data pins, raising the possibility of driving these without an intermediate controller chip. Yes, I
 understand the risks associated with wiring inductive loads directly to the microcontroller.  Arduinos are
@@ -69,5 +69,5 @@ eBay stores selling them.  Apparently a complete GM instrument cluster has 6 mot
 In all it cost about $25 including postage from the US to Australia.
 At the time of writing they carry both the X25.168
 with rear contacts, and the X25.589 with front contacts and a longer indicator shaft.
-Both have internal stops.  See the [buyers guide](/resources/switec/ISM_Buyers_Guide.pdf) for details
+Both have internal stops.  See the {{< xref src="/resources/switec/ISM_Buyers_Guide.pdf" label="buyers guide" >}} for details
 on the different models.

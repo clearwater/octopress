@@ -5,4 +5,4 @@ generate:
 	hugo --buildDrafts=false
 
 publish:
-	rsync -rav ./public/ guy@clearwater.com.au:/data/www/gaugette.clearwater.com.au/
+	rsync -rav ./public/ guy@clearwater.com.au:/data/www/guy.carpenter.id.au/gaugette/

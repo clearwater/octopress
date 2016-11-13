@@ -25,7 +25,7 @@ There are several problems with this in the context of an embedded device:
 
 So I don't want to use ClientLogin.
 
-{{< img "/resources/2012-11-06/oauth-2-sm.png" right >}}
+{{< img src="/resources/2012-11-06/oauth-2-sm.png" pos="right" >}}
 
 It turns out the Google's OAuth2 implementation has a great alternative for embedded applications; [OAuth 2.0 for Devices](https://developers.google.com/accounts/docs/OAuth2ForDevices).  Here's the high-level overview of how the authentication works:
 

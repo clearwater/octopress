@@ -7,7 +7,7 @@ categories:
  - Raspberry Pi
 ---
 
-{{< img "/resources/2012-11-08/ssd1306.jpg" right >}}
+{{< img src="/resources/2012-11-08/ssd1306.jpg" pos="right" >}}
 
 Adafruit's lovely little [128x32 monochrome SPI OLED module](http://www.adafruit.com/products/661)
 uses a SSD1306 driver chip ([datasheet](http://www.adafruit.com/datasheets/SSD1306.pdf)),
@@ -72,7 +72,7 @@ Wire Up
 -------
 
 Here's how I've wired it up.  You can freely change the GPIOs for D/C and Reset.
-{{< img "/resources/2012-11-08/raspberrypi_and_ssd1306.jpg" >}}
+{{< img src="/resources/2012-11-08/raspberrypi_and_ssd1306.jpg" >}}
 
 Test Code
 ----
@@ -133,7 +133,7 @@ while True:
 About Fonts
 -----------
 
-{{< img "/resources/2012-11-08/steve-jobs-does-not-approve.jpg" right >}}
+{{< img src="/resources/2012-11-08/steve-jobs-does-not-approve.jpg" pos="right" >}}
 
 This test code uses the 5x7 bitmap font from the
 [Adafruit GFX library](https://github.com/adafruit/Adafruit-GFX-Library/blob/master/glcdfont.c)

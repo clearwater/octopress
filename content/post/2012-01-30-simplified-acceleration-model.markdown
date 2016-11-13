@@ -2,7 +2,7 @@
 
 title: "A Simplified Acceleration Model"
 date: "2012-01-26T09:42:00+10:00"
-
+slug: "simplified-acceleration-model"
 categories:
  - Switec X25
  - Arduino
@@ -20,8 +20,8 @@ maximum motor speed.
 I've rewritten that logic to use a simple lookup table instead.
 This is a fairly obvious approach, but it was
 reassuring to see similar approaches recommended in both the
-[VID 29 documentation](/resources/vid/2009111395111_Acceleration_&_reset_calculation_example.pdf)
-and the [MCR MR1107 data sheet](/resources/mcr/2010410104915847.pdf).
+{{< xref src="/resources/vid/2009111395111_Acceleration_&_reset_calculation_example.pdf" label="VID 29 documentation" >}}
+and the {{< xref src="/resources/mcr/2010410104915847.pdf" label="MCR MR1107 data sheet" >}}.
 
 The acceleration curve is defined as pairs of vel,delay values:
 
@@ -54,14 +54,14 @@ steps as the unit for ```vel``` makes it very
 easy to determine when to declerate: when ```vel``` is greater than or equal to the number of steps
 to reach our destination, we need to start decelerating.
 
-{{< img "/resources/VID29_accel.png" right "From the VID29 Tech Note" >}}
+{{< img src="/resources/VID29_accel.png" pos="right" alt="From the VID29 Tech Note" >}}
 The new logic also ensures that if the motor is moving at
 speed in one direction and is directed to a new position in the opposite direction it will
 decelerate to a stop before accelerating in the opposite direction.
 
 The constants that make up the acceleration table are constrained by the
 the inertia of the needle attached to the motor.  The
-[VID 29 documentation](/resources/vid/2009111395111_Acceleration_&_reset_calculation_example.pdf)
+{{< xref src="/resources/vid/2009111395111_Acceleration_&_reset_calculation_example.pdf" label="VID 29 documentation" >}}
 gives some recommendations for calculating these values, but I actually
 didn't use that.  I experimented until I
 found values that were within operational limits and look nice to me.

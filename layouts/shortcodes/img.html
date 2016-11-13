@@ -1,1 +1,1 @@
-<img src="{{ if hasPrefix (.Get 0) "/"}}{{$.Site.BaseURL}}{{ end }}{{ .Get 0 }}" {{ with .Get 1}} class="{{.}}" {{ end }} />
+<img src="{{ if hasPrefix (.Get "src") "/"}}{{$.Site.BaseURL}}{{ end }}{{ .Get "src" }}" {{ if .Get "pos" }} class="{{ .Get "pos" }}" {{ end }} {{ if .Get "alt" }} alt="{{ .Get "alt" }}" {{ end }} />

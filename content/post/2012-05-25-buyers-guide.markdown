@@ -15,17 +15,17 @@ produce a good-quality product.
 
 <!--more-->
 
-### Switec {{< img "/resources/2012-05-25/x25-168.jpg" right >}}
+### Switec {{< img src="/resources/2012-05-25/x25-168.jpg" pos="right" >}}
 Switec was originally the technology arm of the Swiss watch company Swatch.
 The stepper business was sold off to Singapore-based [Juken Technology](http://jukenswisstech.com/) in 2009.
 Switec motors are white, and have part numbers starting with "X".
 
-### VID {{< img "/resources/2012-05-25/vid29-02.jpg" right >}}
+### VID {{< img src="/resources/2012-05-25/vid29-02.jpg" pos="right" >}}
 Hong Kong based [VID](http://www.vid.wellgain.com/product.aspx) also manufacture a range
 of similar motors.  Their motors are black, and have a black model number starting with "vid".
 <br clear="right"/>
 
-### MCR {{< img "/resources/2012-05-25/mr1108.jpg" right >}}
+### MCR {{< img src="/resources/2012-05-25/mr1108.jpg" pos="right" >}}
 Chinese company [MCR Motor](http://www.mcrmotor.com/en/) manufacture a range of compatible motors.
 Their motors are white. with part numbers starting with "MR".
 <br clear="right"/>
@@ -59,7 +59,7 @@ to make it possible to have an illuminated pointer.
 
 ### X26 Series
 The X26 motors are dual-shaft analog clock motors.  The model numbers are X26.101, X26.103, X26.123, X26.504.
-See the the "Switec Series Buyers Guide" in the [Resources](/resources) for more details.
+See the the "Switec Series Buyers Guide" in the {{< xref src="/resources" label="Resources" >}} for more details.
 
 ### X27 Series
 The X27 motors are a new line replacing the X25 series.  The X27 part numbers mirror the X25 series.

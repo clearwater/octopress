@@ -12,8 +12,7 @@ This build combines a Raspberry Pi with a rotary-encoder, an RGB LED and an OLED
 character display to create a time clock that logs my time on tasks directly to
 a Google Docs spreadsheet.
 
-{{< img "/resources/2013-02-03/imgp3555.jpg" >}}
-{{< img "/resources/2013-02-03/imgp3555.jpg" >}}
+{{< img src="/resources/2013-02-03/imgp3555.jpg" >}}
 
 <!--more-->
 
@@ -48,14 +47,14 @@ The theory of operation is pretty simple:
 
 The top of the case is made from a single block of wood.
 
-{{< img "/resources/2013-02-03/imgp3532.jpg" >}}
+{{< img src="/resources/2013-02-03/imgp3532.jpg" >}}
 
 The bottom of the block has been hollowed out to house the RPi board. The RPi
 sits in a plastic carriage that screws to the bottom of the block. I have not
 provided access to the HDMI, audio or video ports on the RPi since I’m not going
 to use them.
 
-{{< img "/resources/2013-02-03/imgp3479.jpg" >}}
+{{< img src="/resources/2013-02-03/imgp3479.jpg" >}}
 
 The carriage for the Raspberry Pi was designed in
 [OpenSCAD](http://openscad.org/) and printed on a Makerbot Replicator. The RPi
@@ -66,7 +65,7 @@ bottom and routed out matching recesses in the block. I left the posts there
 because they make the carriage look a little more interesting. Or because I was
 too lazy to remove them, I’ve heard it both ways.
 
-{{< img "/resources/2013-02-03/base_preview_featured.jpg" >}}
+{{< img src="/resources/2013-02-03/base_preview_featured.jpg" >}}
 
 The OpenScad sources and STL files for the base are available from
 [Thingiverse](http://www.thingiverse.com/thing:46892).
@@ -74,8 +73,7 @@ The OpenScad sources and STL files for the base are available from
 ## The Circuit
 
 I’m using two of the ground pins originally documented as Do Not Connect (DNC).
-The extra grounds are really convenient, and Eben [has publicly
-committed](http://www.raspberrypi.org/archives/2233) to keeping these available
+The extra grounds are really convenient, and Eben [has publicly committed](http://www.raspberrypi.org/archives/2233) to keeping these available
 in future board revisions.
 
 It’s worth pointing out that I deliberately selected GPIO pin 5 for the push
@@ -92,7 +90,7 @@ Lesson learned; be careful with pin 5, or [disable safe
 mode](http://elinux.org/images/c/ca/Raspi_documented_config.txt) by adding
 `avoid_safe_mode=1` to `/boot/config.txt`.
 
-{{< img "/resources/2013-02-03/timeclock2_bb.jpg" >}}
+{{< img src="/resources/2013-02-03/timeclock2_bb.jpg" >}}
 
 For most of the GPIO connections I cut pre-terminated [Female Female jumper
 wires](https://www.adafruit.com/products/266) in half and soldered the cut end
@@ -102,7 +100,7 @@ Electronics](http://littlebirdelectronics.com/products/premium-jumper-wire-50-pi
 It is crucial to keep wiring short and well insulated so that it will all pack
 in neatly and without shorts when the case is closed up.
 
-{{< img "/resources/2013-02-03/imgp3481.jpg" >}}
+{{< img src="/resources/2013-02-03/imgp3481.jpg" >}}
 
 ## RGB LED Indicator
 
@@ -118,7 +116,7 @@ capacitive switches.
 
 {{< youtube tRBiQ0ZXFZM >}}
 
-{{< img "/resources/2013-02-03/imgp3560.jpg" right >}}
+{{< img src="/resources/2013-02-03/imgp3560.jpg" pos="right" >}}
 
 I liked that a lot, but ultimately settled on a long oven light which had a more
 compact footprint. It gives elegant curving internal reflections which look
@@ -140,7 +138,7 @@ I’ve seen advice suggesting I should have selected different values for the
 resistors to to get optimal white balance. I didn’t bother. Colour balance is
 fine. [I aint bovvered](http://www.youtube.com/watch?v=vFWkJuPhApc).
 
-{{< img "/resources/2013-02-03/imgp3444.jpg" >}}
+{{< img src="/resources/2013-02-03/imgp3444.jpg" >}}
 
 ## Rotary Encoder
 
@@ -152,7 +150,7 @@ very simple.
 
 ## 128x32 SSD1306 OLED Display
 
-{{< img "/resources/2013-02-03/imgp3459.jpg" >}}
+{{< img src="/resources/2013-02-03/imgp3459.jpg" >}}
 
 I’ve written about using these great little
 [128x32 OLEDs](https://www.adafruit.com/products/661) from Adafruit
@@ -171,7 +169,7 @@ been looking for a metallic paint that wouldn’t dissolve the ABS. Liquid Leaf 
 xylene-based, which [should be safe for ABS](http://books.google.com.au/books?isbn=0815515812), although maybe
 [not so safe for humans](http://www.intertradegrp.com/docs/IT-XYLENE-MSDS.pdf).
 
-{{< img "/resources/2013-02-03/imgp2505.jpg" >}}
+{{< img src="/resources/2013-02-03/imgp2505.jpg" >}}
 
 The effect of metallic paint on the printed surface is interesting; it
 highlights the individual filaments in the print. I like it. It would be
@@ -196,7 +194,7 @@ I ran this loop from a cold boot for 25 minutes, first with the top off, then
 again (after letting the system cool down) with the case closed up tight. For
 the record the ambient temperature in my office was around 26°C.
 
-{{< img "/resources/2013-02-03/RPi-Temperature.png" >}}
+{{< img src="/resources/2013-02-03/RPi-Temperature.png" >}}
 
 The results show that the closed box adds about 4°C to the CPU temperature at
 idle. I tried removing the bulb from the centre of the cover to allow hot air to
@@ -228,4 +226,4 @@ In the video below, the LED colours are as follows:
 
 The resulting spreadsheet looks like this:
 
-{{< img "/resources/2013-02-03/TimeClockSpreadsheet.png" >}}
+{{< img src="/resources/2013-02-03/TimeClockSpreadsheet.png" >}}

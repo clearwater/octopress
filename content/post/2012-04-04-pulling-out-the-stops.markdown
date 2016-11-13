@@ -13,7 +13,7 @@ Recently [Tim Hirzel asked](/about#comment-459699391) if I knew
 of a source of motors without stops, or if the X25.168's could be
 modified to remove the stops and open up the full 360 degrees of rotation.
 
-Good question!  The [X25 Series Buyers Guide](/resources) lists 6 models
+Good question!  The {{< xref src="/resources" label="X25 Series Buyers Guide" >}} lists 6 models
 of motors without stops, but a quick search turned up no suppliers
 selling these in small volumes.
 
@@ -21,7 +21,7 @@ Okay, time to figure out if the stops can be removed.  Note that I'm working
 on a VID-29 clone, not a genuine Switec X25.168 here.
 There are 4 tiny screws that open the case revealing this:
 
-![image](/resources/2012-04-04/imgp9223.jpg)
+!{{< xref src="/resources/2012-04-04/imgp9223.jpg" label="image" >}}
 
 <!--more-->
 
@@ -29,11 +29,11 @@ The drive-shaft and attached gear sit loose and can be lifted out.  Flipping the
 gear over reveals the mechanism for the stop; a raised trapezoidal bump on the gear face
 that stops against a matching protrusion at the bottom of the case.
 
-![image](/resources/2012-04-04/imgp9225.jpg)
+!{{< xref src="/resources/2012-04-04/imgp9225.jpg" label="image" >}}
 
 I cut off the stop with a Stanley knife, and filed it flat with a small file.
 
-![image](/resources/2012-04-04/imgp9226.jpg)
+!{{< xref src="/resources/2012-04-04/imgp9226.jpg" label="image" >}}
 
 Reassembly was easy, and bugger me, it works.
 

@@ -4,7 +4,7 @@ date: "2013-06-04T16:52:28+10:00"
 categories:
 ---
 
-{{< img "/resources/2013-06-04/raspberry-pi-rotary-encoder.png" right >}}
+{{< img src="/resources/2013-06-04/raspberry-pi-rotary-encoder.png" pos="right" >}}
 While working through a few queries about the [rotary encoder library](/gaugette/2013/01/14/rotary-encoder-library-for-the-raspberry-pi/),
 it became evident that it would help to have a better test application to diagnose wiring issues.
 

@@ -23,7 +23,7 @@ so there are actually 96 resolvable steps per rotation.  This unit also includes
 a momentary switch which is closed when the button is pushed down.  Takes a solid
 push to close the switch.
 
-{{< img "/resources/2013-01-14/rotary-encoder.png" center >}}
+{{< img src="/resources/2013-01-14/rotary-encoder.png" pos="center" >}}
 
 The diagram above shows how I've connected the rotary encoder to the Raspberry Pi.
 I'm using pin 9, one of the "Do Not Connect" (DNC) pins to get a second ground pin for convenience.
@@ -32,12 +32,12 @@ to keep the extra power and ground pins unchanged in future releases, so
 I think it is safe to publish circuits using them.  Right?  Here's a pinout
 highlighting the functions of the DNC pins, along with the wiringpi pin numbers.
 
-{{< img "/resources/pi-pinout.png" >}}
+{{< img src="/resources/pi-pinout.png" >}}
 
 Decoder Logic
 -------------
 
-{{< img "/resources/2013-01-14/quadrature.png" right >}}
+{{< img src="/resources/2013-01-14/quadrature.png" pos="right" >}}
 
 The implementation configures pins A and B as inputs, turns on the internal pull-up resistors for each,
 so they will read high when the contacts are open, low when closed.  The inputs

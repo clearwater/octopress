@@ -10,7 +10,7 @@ categories:
 
 ## What Are We Doing Here?
 
-{{< img "/resources/2014-01-28/BeagleBoneBlackSSD1306_proto_400x.jpg" right >}}
+{{< img src="/resources/2014-01-28/BeagleBoneBlackSSD1306_proto_400x.jpg" pos="right" >}}
 
 In an [earlier post]({{< relref "2012-11-08-controlling-an-adafruit-spi-oled-with-a-raspberry-pi.markdown" >}}) I described how to use the py-gaugette library to drive an [Adafruit 128x32 monochrome OLED display](http://www.adafruit.com/products/661) from a Raspberry Pi, and [a followup article](/2012/11/11/font-support-for-ssd1306/) added high-quality fonts.
 
@@ -88,7 +88,7 @@ P9_22 | Clock | yellow | Clk
 
 Pins P9_17, P9_18 and P9_22 are fixed by the SPI0 interface. Pins P9_13 and P9_15 are arbitrarily chosen GPIO pins, feel free to use any available pins and pass the appropriate pin name to the constructor.
 
-{{< img "/resources/2014-01-28/BeagleBoneBlackSSD1306_bb.png" >}}
+{{< img src="/resources/2014-01-28/BeagleBoneBlackSSD1306_bb.png" >}}
 
 ## Porting the Code
 

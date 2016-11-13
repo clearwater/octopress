@@ -3,11 +3,12 @@
 title: "Better Fonts for the SSD1306"
 date: "2012-11-11T16:42:00+10:00"
 comments: true
+slug: "font-support-for-ssd1306"
 categories:
  - Raspberry Pi
 ---
 
-{{< img "/resources/2012-11-08/ssd1306.jpg" right >}}
+{{< img src="/resources/2012-11-08/ssd1306.jpg" pos="right" >}}
 The first release of the SSD1306 support library [py-gaugette](https://github.com/guyc/py-gaugette)
 used the 5x7 pixel fonts from the
 [Adafruit GFX library](https://github.com/adafruit/Adafruit-GFX-Library/blob/master/glcdfont.c).
@@ -19,7 +20,7 @@ to take advantage of the memory and resolution we have to work with?
 Generating Font Bitmaps
 -----------------------
 
-{{< img "/resources/2012-11-11/tahoma_16.jpg" right >}}
+{{< img src="/resources/2012-11-11/tahoma_16.jpg" pos="right" >}}
 I started with [The Dot Factory](http://www.pavius.net/2009/07/the-dot-factory-an-lcd-font-and-image-generator/) by Eran Duchan.  Its a handy C# (Windows) tool for generating C and C++ bitmap files quickly, and [source code is available](https://github.com/pavius/The-Dot-Factory).  I modified it to generate Python code, and to add a kerning table to store the minimum number of pixels the cursor must move between any two characters to avoid collison.  
 
 The kerning isn't completely right yet  - I noticed that the underscore character can slip beheath other characters.  I'll need to look at that some more in due time - and I'd also like to replace the C# app for a command-line tool to generate the rasterized image files.
@@ -119,7 +120,7 @@ from gaugette.fonts import arial_16
 textSize = led.draw_text3(0,0,"Hello World",arial_16)
 ```
 
-{{< img "/resources/2012-11-11/old_english_text.jpg" right >}}
+{{< img src="/resources/2012-11-11/old_english_text.jpg" pos="right" >}}
 
 Supporting Horizontal Scrolling
 -------------------------------

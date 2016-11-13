@@ -7,14 +7,14 @@ categories:
  - Switec X25
 ---
 
-{{< img "/resources/2013-01-18/analog-gauge-stepper-breakout.jpg" right >}}
+{{< img src="/resources/2013-01-18/analog-gauge-stepper-breakout.jpg" pos="right" >}}
 Check out this great new [Tindie project](https://tindie.com/shops/TheRengineer/analog-gauge-stepper-breakout-board/)
 launched by [The Renaissance Engineer](http://www.therengineer.com/) [Adam Fabio](https://twitter.com/ajfabio)
 for a new breakout board designed for Switec motors and clones.
 
 <!--more-->
 
-{{< img "/resources/2013-01-18/analog-gauge-stepper-kit.jpg" right >}}
+{{< img src="/resources/2013-01-18/analog-gauge-stepper-kit.jpg" pos="right" >}}
 The breakout board incorporates flyback diodes to protect your circuit from inductive kickback, and
 the also serves as a convenient base to mount the motors.  The kit includes
 the board, diodes, 6-pin header, a Switec X27.168 and 3d-printed needle.

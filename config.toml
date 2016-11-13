@@ -1,4 +1,4 @@
-baseurl = "http://gaugette.clearwater.com.au/gaugette"
+baseurl = "http://guy.carpenter.id.au/gaugette"
 disablePathToLower = false
 languageCode = "en-us"
 title = "Gaugette"
@@ -21,7 +21,7 @@ pygmentscodefences = true
 # pygmentsoptions = "linenos=true"
 
 [permalinks]
-post = "/:year/:month/:day/:title/" # change the post URL to look like the old ones
+post = "/:year/:month/:day/:slug/" # change the post URL to look like the old ones
 
 # Make tags and categories work
 [indexes]
@@ -34,18 +34,9 @@ post = "/:year/:month/:day/:title/" # change the post URL to look like the old o
 # If navigationNewWindow does not exist or set to false then links will open in the same window
 
 [[menu.main]]
-    Name = "About"
-    URL = "/about"
-    weight = -5
-
-[[menu.main]]
     Name = "Blog"
     URL = "/"
     weight = -5
-
-[[menu.main]]
-    Name = "Resources"
-    URL = "/resources"
 
 # Sidebar menus
 # Enable with "sidebarMenuEnabled = true" in [params]
@@ -93,7 +84,7 @@ post = "/:year/:month/:day/:title/" # change the post URL to look like the old o
 
     # If set to true, navigation menu links will open in a new window with the exception of links to root ("\")
     # If this item does not exist or set to false, then navigation menu links will open in the same window
-    navigationNewWindow = true
+    navigationNewWindow = false
 
     # If false, all of the post will appear on front page (and in pagination)
     truncate = true
@@ -108,7 +99,7 @@ post = "/:year/:month/:day/:title/" # change the post URL to look like the old o
     searchEngineURL = "https://www.google.com/search"
 
     # Text of the "Continue Reading" label. &rarr; == right arrow, but it gets messed up in the string so we will add it to index.html manually
-    continueReadingText = "Read article"
+    continueReadingText = "Read more"
 
     # Google analytics code
     googleAnalytics = "google analytics"

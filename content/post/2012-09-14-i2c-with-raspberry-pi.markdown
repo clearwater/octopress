@@ -7,7 +7,7 @@ categories:
  - Raspberry Pi
 ---
 
-{{< img "http://guy.carpenter.id.au/gaugette/resources/thermo_backlit.png" right >}}
+{{< img src="http://guy.carpenter.id.au/gaugette/resources/thermo_backlit.png" pos="right" >}}
 
 I've been intending to try driving Switec X25.168 motors using the MCP23008 I&sup2;C I/O port
 expander chip from an Arduino, but it occurs to me that it might be more interesting
@@ -18,7 +18,7 @@ the need for high-current drivers.
 <!--more-->
 
 The MCP23008 provides 8 I/O lines controlled via an I&sup2;C interface.  
-The [datasheet is available here](/resources/2012-09-14/MCP23008.pdf).
+The {{< xref src="/resources/2012-09-14/MCP23008.pdf" label="datasheet is available here" >}}.
 The pins are rated to source and sink 20mA each.  That's around half what an Arduino offers, but
 should be (just) enough to drive our little Switec steppers.
 These chips are available [from Adafruit](http://www.adafruit.com/products/593),
@@ -118,11 +118,11 @@ Step 3 - Wire Up
 
 The Raspberry Pi expansion port pinout is:
 
-{{< img "/resources/2012-09-14/raspberrypi.png" >}}
+{{< img src="/resources/2012-09-14/raspberrypi.png" >}}
 
 The MCP23008 pins are:
 
-{{< img "/resources/2012-09-14/MCP23008.png" >}}
+{{< img src="/resources/2012-09-14/MCP23008.png" >}}
 
 There are 4 wires connect the RPi to the MCP23008:
 
@@ -187,7 +187,7 @@ pi@raspberrypi ~ $ sudo i2cget -y 0 0x20 10
 Step 5 - Spin a Motor!
 ----
 
-{{< img "/resources/2012-09-14/raspberrypi_and_mcp23008.png" >}}
+{{< img src="/resources/2012-09-14/raspberrypi_and_mcp23008.png" >}}
 
 I wired up a VID29 to pins GP0 to GP3 on the driver chip and kludged
 together some C code to cycle through the 6 signal states used to drive the motor.
@@ -227,7 +227,7 @@ so used that to power the MCP23008.  Problem solved, motor turns, errors are gon
 
 This is the final circuit.
 
-{{< img "/resources/2012-09-14/circuit_bb.png" >}}
+{{< img src="/resources/2012-09-14/circuit_bb.png" >}}
 
 
 Speed Tests

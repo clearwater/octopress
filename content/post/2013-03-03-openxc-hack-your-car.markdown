@@ -8,7 +8,7 @@ categories:
  - Switec X25
 ---
 
-{{< img "/resources/2013-03-03/openxc-logo.png" left >}}
+{{< img src="/resources/2013-03-03/openxc-logo.png" pos="left" >}}
 [OpenXC](http://openxcplatform.com/) is a very cool initiative involving Ford Motor Company
 and Bug Labs aimed at creating an open development ecosystem for interfacing with in-car electronics.
 Looks like a pretty great project.
@@ -18,7 +18,7 @@ Looks like a pretty great project.
 OpenXC Switec X25-based "Retro Gauge"
 -------------------------------------
 
-{{< img "/resources/2013-03-03/overview.jpg" right >}}
+{{< img src="/resources/2013-03-03/overview.jpg" pos="right" >}}
 One of the OpenXC projects featured on their website is a
 [retro gauge](http://openxcplatform.com/projects/retro-gauge.html)
 based around Switec X25 type micro-steppers.

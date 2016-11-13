@@ -8,6 +8,6 @@ categories:
 draft: true
 ---
 
-{{< img "/resources/2012-10-17/L293D.jpg" right >}}
+{{< img src="/resources/2012-10-17/L293D.jpg" pos="right" >}}
 
-L293D push-pull four-channel driver with diodes [(datasheet)](/resources/L293D_ST.pdf)
+L293D push-pull four-channel driver with diodes {{< xref src="/resources/L293D_ST.pdf" label="(datasheet)" >}}
