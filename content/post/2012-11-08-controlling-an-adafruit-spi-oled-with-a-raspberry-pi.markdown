@@ -1,6 +1,6 @@
 ---
 
-title: "Controlling an Adafruit SSD1306 SPI OLED with a Raspberry Pi"
+title: "Controlling an Adafruit SPI OLED with a Raspberry Pi"
 date: "2012-11-08T10:31:00+10:00"
 comments: true
 categories:

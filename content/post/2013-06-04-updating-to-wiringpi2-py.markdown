@@ -5,7 +5,7 @@ categories:
   - "Raspberry Pi"
 ---
 
-![](https://projects.drogon.net/wp-content/uploads/2013/05/adaLcd-1024x602.jpg)
+{{< img "https://projects.drogon.net/wp-content/uploads/2013/05/adaLcd-1024x602.jpg" >}}
 Phillip Howard and Gordon Henderson recently [announced](http://pi.gadgetoid.com/post/039-wiringpi-version-2-with-extra-python)
 the availability of [WiringPi2](http://wiringpi.com/) along with a new python wrapper
 [WiringPi2-Python](https://github.com/Gadgetoid/WiringPi2-Python).

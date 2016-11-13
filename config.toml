@@ -1,4 +1,4 @@
-baseurl = "http://guy.carpenter.id.au"
+baseurl = "http://gaugette.clearwater.com.au/gaugette"
 disablePathToLower = false
 languageCode = "en-us"
 title = "Gaugette"
@@ -44,16 +44,8 @@ post = "/:year/:month/:day/:title/" # change the post URL to look like the old o
     weight = -5
 
 [[menu.main]]
-    Name = "Archives"
-    URL = ""
-
-[[menu.main]]
     Name = "Resources"
-    URL = ""
-
-[[menu.main]]
-    Name = "Code"
-    URL = ""
+    URL = "/resources"
 
 # Sidebar menus
 # Enable with "sidebarMenuEnabled = true" in [params]

@@ -3,3 +3,6 @@ server:
 
 generate:
 	hugo --buildDrafts=false
+
+publish:
+	rsync -rav ./public/ guy@clearwater.com.au:/data/www/gaugette.clearwater.com.au/
