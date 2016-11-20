@@ -25,6 +25,10 @@ categories:
 *   [VID29 Power-On Reset Procedure](/gaugette/resources/vid/2009111395504_VID29_reset_pulse_general_description.pdf)
 *   [VID29 Electrical and Mechanical Characteristics](/gaugette/resources/vid/2009111395537_VID29Electrical_and_Mechanical_Characteristic1.pdf)
 
+## VID23 Series Motors
+
+*   [VID23 Transparent Shaft Motor](/gaugette/resources/vid/2009111390052_VID23 manual EN-081210.pdf)
+
 ## MCR Motor MR1107/MR1108
 
 *   [MCR Motor MR1107/MR1108 Data Sheet](/gaugette/resources/mcr/2010410104720473.pdf)
