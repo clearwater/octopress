@@ -1,6 +1,7 @@
 ---
 
 title: "Pulling Out All The Stops"
+slug: "pulling-out-the-stops"
 date: "2012-04-04T09:58:00+10:00"
 
 categories:

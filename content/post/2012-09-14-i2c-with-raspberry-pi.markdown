@@ -1,6 +1,7 @@
 ---
 
 title: "Analog Gauges Using I2C on the Raspberry Pi"
+slug: "i2c-with-raspberry-pi"
 date: "2012-09-14T15:49:00+10:00"
 comments: true
 categories:

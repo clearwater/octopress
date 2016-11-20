@@ -1,6 +1,7 @@
 ---
 
 title: "OpenXC - Hack Your Car"
+slug: "openxc-hack-your-car"
 date: "2013-03-03T15:20:48+10:00"
 comments: true
 external-url:

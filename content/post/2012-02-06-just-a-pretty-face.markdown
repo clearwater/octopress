@@ -9,7 +9,7 @@ categories:
 
 {{< img src="/resources/100k_square_dial.png" pos="right" label="Dial Face Artwork" >}}
 I made dial faces for a couple of the square gauges built
-in [Build Number One](/blog/2012/01/28/build-number-one/).  Nearly
+in [Build Number One](/blog/gaugette/2012/01/28/build-number-one/).  Nearly
 ready to install these guys.  
 
 <!--more-->

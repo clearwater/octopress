@@ -40,6 +40,16 @@ page = "/:slug/"
     weight = -5
 
 [[menu.main]]
+    Name = "About"
+    URL = "/about/"
+    weight = -5
+
+[[menu.main]]
+    Name = "Resources"
+    URL = "/resources/"
+    weight = -5
+
+[[menu.main]]
     Name = "Categories"
     URL = "/categories/"
     weight = -5

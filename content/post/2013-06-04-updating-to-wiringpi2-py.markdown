@@ -1,5 +1,6 @@
 ---
 title: "Updating py-gaugette to wiringpi2"
+slug: "updating-to-wiringpi2-py"
 date: "2013-06-04T16:14:51+10:00"
 categories:
   - "Raspberry Pi"
