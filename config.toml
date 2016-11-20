@@ -22,6 +22,7 @@ pygmentscodefences = true
 
 [permalinks]
 post = "/:year/:month/:day/:slug/" # change the post URL to look like the old ones
+page = "/:slug/"
 
 # Make tags and categories work
 [indexes]
@@ -36,6 +37,11 @@ post = "/:year/:month/:day/:slug/" # change the post URL to look like the old on
 [[menu.main]]
     Name = "Blog"
     URL = "/"
+    weight = -5
+
+[[menu.main]]
+    Name = "Categories"
+    URL = "/categories/"
     weight = -5
 
 # Sidebar menus

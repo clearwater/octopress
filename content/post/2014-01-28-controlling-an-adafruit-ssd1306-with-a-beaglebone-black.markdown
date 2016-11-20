@@ -4,7 +4,7 @@ title: "Controlling an Adafruit SSD1306 SPI OLED With a Beaglebone Black"
 date: "2014-01-28T12:49:00+10:00"
 comments: true
 categories:
- - BBB
+ - Beaglebone
 ---
 
 
