@@ -1,20 +1,20 @@
 ---
-title: "Version 3 of py-gaugette"
+title: "py-gaugette Gets a Refresh"
 date: "2016-11-12T14:39:00+10:00"
-draft: True
+draft: False
 categories:
- - "Switec X25"
- - "Arduino"
+ - Python
+ - Raspberry Pi
 ---
 
 I've made some major changes to the py-gaugette library to address
 several issues that have accumulated over time, namely:
 
- - use interrupts for rotary encoder
+ - added interrupt-driven option to rotary encoder
  - fully Python 3 compatible
  - works with current version of Py-WiringPi
  - uses dependency injection for GPIO and SPI interfaces
- - updated Google Sheets to use new API
+ - updated Google Sheets code to use new API
 
 ## Dependency Injection for GPIO and SPI
 
@@ -27,18 +27,12 @@ implementations.
 ## Interrupts for Rotary Encoders
 
 The original implementation of the rotary encoder library used polling.
-On the Raspberry Pi it now supports interrupts, although the polling
+On the Raspberry Pi it now supports interrupts.  The previous polling
 behaviour is still supported.
 
-## Fully Python3 Compatible
+## Fully Python 3 Compatible
 
 While the library has been mostly Python 3 compatible, there were a few
 exceptions.  In particular the SSD1306 class depended heavily on the Python 2
 behaviour of the division operator, which changed in Python 3.  I've rewritten
 the calculations to mostly use bit shifts rather than division.
-
-
-{{<code>}}
-sudo apt-get install python-pip python-dev
-sudo pip install wiringpi
-{{</code>}}cd
