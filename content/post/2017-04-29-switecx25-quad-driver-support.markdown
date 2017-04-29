@@ -8,11 +8,18 @@ categories:
  - Arduino
 ---
 
-Quad Driver Chips
------------------
 When I first started playing with the X25-series steppers back in 2012 I was
 aware of the [X12.017 Quad Driver Chip](/gaugette/2012/01/19/x12-quad-driver-chip/)
-but was unable to find a low-volume supplier.
+but was unable to find a low-volume supplier.  
+
+They offer a number of advantages over driving the motor directly:
+
+ - microstepping provides smoother positioning - 12 steps per degree rather than 3.
+ - only two GPIO pins are required per motor (plus one global reset pin)
+ - output pins are isolated from the inductive effects of the motor coils
+ - lower current requirements
+ 
+<!--more-->
 
 There are numerous clones of this chip:
 
@@ -20,12 +27,7 @@ There are numerous clones of this chip:
  - The [NOST Microelectronics](http://www.nostm.com) BY8920  Quad Driver {{< xref src="/resources/nost/1428412011616by8290datasheet.pdf" label="(datasheet, in Chinese)" >}}
  - The AX1201728SG (by EmMicroe?)
 
-All of these are functionally identical.  They offer a number of advantages over driving the motor directly:
-
- - microstepping provides smoother positioning - 12 steps per degree rather than 3.
- - only two GPIO pins are required per motor (plus one global reset pin)
- - output pins are isolated from the inductive effects of the motor coils
- - lower current requirements
+All of these are functionally identical.  
 
 The AX1201728SG
 ---------------
