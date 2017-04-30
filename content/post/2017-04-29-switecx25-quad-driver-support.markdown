@@ -8,6 +8,8 @@ categories:
  - Arduino
 ---
 
+{{< img pos="right" src="/resources/2017-04-29/AX1201728SG-closeup.jpg" label="AX1201728SG" >}}
+
 This article demonstrates a modification of the Arduino SwitecX25 driver library
 to use a AX1201728SG quad driver chip (equivalent to the X12.017 or VID6606).
 This chip offer some significant advantages over driving the motor directly:
