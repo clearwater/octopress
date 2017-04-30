@@ -21,18 +21,20 @@ This chip offer some significant advantages over driving the motor directly:
 
 <!--more-->
 
-In the past I've been unable to find a low-volume supplier for the [X12.017 Quad Driver Chip](/gaugette/2012/01/19/x12-quad-driver-chip/)
-However recently a number of functionally identical chips have become available.
+In the past I've been unable to find a low-volume supplier for the [X12.017 Quad Driver Chip](/gaugette/2012/01/19/x12-quad-driver-chip/),
+or any of the functionally identical chips from other manufacturers.  These are the ones I know about:
 
  - The VID VID6606 Quad Driver {{< xref src="/resources/vid/2009111391612_VID6606%20manual%20060927.pdf" label="(datasheet)" >}}
- - The [NOST Microelectronics](http://www.nostm.com) BY8920  Quad Driver {{< xref src="/resources/nost/1428412011616by8290datasheet.pdf" label="(datasheet, in Chinese)" >}}
+ - The [NOST Microelectronics](http://www.nostm.com) BY8920 Quad Driver {{< xref src="/resources/nost/1428412011616by8290datasheet.pdf" label="(datasheet, in Chinese)" >}}
  - The AX1201728SG (by EmMicroe maybe?)
+
+ Recently both the AX1201728SG and VID6606 have become readily available in small quantities.
 
 The AX1201728SG
 ---------------
 
- The AX1201728SG is now readily available in low quantities from ebay, Alibaba, etc.
- The one complication is that they are only available in SOP28 surface mount packages, which are
+ The AX1201728SG is available in single quantities from ebay for a few dollars apiece.
+ The one complication is that they are SOP28 surface mount packages, which are
  a little harder to prototype with than DIP packages.
  I bought some drivers, and some SOP28 to DIP28 adaptors so I could mount the drivers on a breadboard
  for testing.
@@ -42,8 +44,8 @@ The AX1201728SG
 Mounting
 --------
 
-I haven't worked with SMD chips before, so I had a friend help me get the mounted.
-We used tweezers to apply the paste, and a regular kitchen oven for reflowing.
+I haven't worked with SMD chips before, so I had a friend help me mount them.
+We used tweezers to apply the paste, and a regular household oven for reflowing.
 Very basic, but it worked fine.
 
 {{< img src="/resources/2017-04-29/SOP28-mounting.jpg" label="AX1201728SG SOP28 Mounting" >}}
@@ -136,19 +138,21 @@ This worked, mostly.  If I leave the motor running for a while I notice that
 the needle position drifts, which indicates either missed steps, or
 a counting problem.  Increasing the inter-step delay from 250ms to 500ms
 resolved that problem, so most likely I'm exceeding the (low) torque limit
-during the turnaround.
+during the turnaround.  I'm not worried about that - once I port the SwitecX25
+library I can find a safe set of acceleration parameters to keep it from dropping
+steps.
 
 Adapting the SwitecX25 Library
 ------------------------------
 
 The SwitecX25 library provides an acceleration/deceleration model,
 and some higher-level control abstractions.  Importantly, it is asynchronous.
-The caller sets a desired step position and then calls the update method
-as frequently as possible and the library steps the motor if a step is due.
+The caller sets a desired step position and then calls the `update()` method
+as frequently as possible and the library manages the scheduling of the steps.
 
 Once concern I have about supporting the quad driver is the being able to
 service the pin transitions quickly enough.
-When driving the motor directly we need to update all 4
+When driving the motor directly we need to update 4
 outputs once per step.  With the quad driver we need to pulse the f(scx) line low then high
 once per micro-step, which equates to 8 transitions per full step.  It may
 turn out to be difficult hit all of the timing deadlines to drive 4 motors at full speed simultaneously.
@@ -198,10 +202,8 @@ Conclusion
 The AX1201728SG looks very promising.  It's a bit of a nuisance to
 deal with surface mount devices if you aren't set up for it, but not insurmountable.
 
-Below is a video showing how smooth
-the motion is with microstepping.
-To get the slow needle turnaround in the video I used a very exaggerated acceleration
-table to keep the needle in the slow range for longer.  With the default
-table it still goes very fast.
+The microstepping is really smooth. Below is a video showing how smooth.
+I used a very exaggerated acceleration
+table to keep the needle in the slow range for longer.
 
 {{< youtube YJIwiru_kk4 >}}
