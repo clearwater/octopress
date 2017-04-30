@@ -8,26 +8,23 @@ categories:
  - Arduino
 ---
 
-When I first started playing with the X25-series steppers back in 2012 I was
-aware of the [X12.017 Quad Driver Chip](/gaugette/2012/01/19/x12-quad-driver-chip/)
-but was unable to find a low-volume supplier.  
+This article demonstrates a modification of the Arduino SwitecX25 driver library
+to use a AX1201728SG quad driver chip (equivalent to the X12.017 or VID6606).
+This chip offer some significant advantages over driving the motor directly:
 
-They offer a number of advantages over driving the motor directly:
+ - it uses microstepping to provide smoother positioning - 12 steps per degree rather than 3.
+ - it requires only two GPIO pins per motor (plus one global reset pin)
+ - it protects the microprocessor from the inductive effects of the motor coils
+ - it places lower current requirements on the microprocessor
 
- - microstepping provides smoother positioning - 12 steps per degree rather than 3.
- - only two GPIO pins are required per motor (plus one global reset pin)
- - output pins are isolated from the inductive effects of the motor coils
- - lower current requirements
- 
 <!--more-->
 
-There are numerous clones of this chip:
+In the past I've been unable to find a low-volume supplier for the [X12.017 Quad Driver Chip](/gaugette/2012/01/19/x12-quad-driver-chip/)
+However recently a number of functionally identical chips have become available.
 
  - The VID VID6606 Quad Driver {{< xref src="/resources/vid/2009111391612_VID6606%20manual%20060927.pdf" label="(datasheet)" >}}
  - The [NOST Microelectronics](http://www.nostm.com) BY8920  Quad Driver {{< xref src="/resources/nost/1428412011616by8290datasheet.pdf" label="(datasheet, in Chinese)" >}}
- - The AX1201728SG (by EmMicroe?)
-
-All of these are functionally identical.  
+ - The AX1201728SG (by EmMicroe maybe?)
 
 The AX1201728SG
 ---------------
@@ -35,21 +32,26 @@ The AX1201728SG
  The AX1201728SG is now readily available in low quantities from ebay, Alibaba, etc.
  The one complication is that they are only available in SOP28 surface mount packages, which are
  a little harder to prototype with than DIP packages.
- I bought a few, and some SOP28 to DIP28 adaptors so I could mount the drivers on a breadboard
+ I bought some drivers, and some SOP28 to DIP28 adaptors so I could mount the drivers on a breadboard
  for testing.
 
 {{< img src="/resources/2017-04-29/SOP28-components.jpg" label="AX1201728SG SOP28 Components" >}}
 
-I haven't worked with SMD chips before, so I had a friend help me with with this step.
+Mounting
+--------
+
+I haven't worked with SMD chips before, so I had a friend help me get the mounted.
 We used tweezers to apply the paste, and a regular kitchen oven for reflowing.
-No specialised equipment. Rudimentary, but it worked fine.
+Very basic, but it worked fine.
 
 {{< img src="/resources/2017-04-29/SOP28-mounting.jpg" label="AX1201728SG SOP28 Mounting" >}}
+
+{{< img pos="right" src="/resources/2017-04-29/AX1201728SG-pinout.png" >}}
 
 Wiring It Up
 ------------
 
-So far I've only tested a single motor.  The wiring is as follows:
+Initially I'm testing with a single motor on output A.  The wiring is as follows:
 
  - VSS (chip pin 12) to GND
  - VDD (chip pins 1 and 15) to 5V
@@ -57,6 +59,9 @@ So far I've only tested a single motor.  The wiring is as follows:
  - CW/CCW A (chip pin 27) to Arduino pin 9
  - f(scx) A (chip pin 28) to Arduino pin 8
 
+{{< img src="/resources/2017-04-29/AX1201728SG_bb.png" label="breadboard" >}}
+
+{{< img pos="right" src="/resources/2017-04-29/X27.168-rear-contacts.png" >}}
 The motor connections are:
 
  - OUT1A (chip pin 7) to Motor pin 1
@@ -137,7 +142,7 @@ Adapting the SwitecX25 Library
 The SwitecX25 library provides an acceleration/deceleration model,
 and some higher-level control abstractions.  Importantly, it is asynchronous.
 The caller sets a desired step position and then calls the update method
-as frequently as possible and the library step the motor if a step is due.
+as frequently as possible and the library steps the motor if a step is due.
 
 Once concern I have about supporting the quad driver is the being able to
 service the pin transitions quickly enough.
@@ -149,6 +154,11 @@ turn out to be difficult hit all of the timing deadlines to drive 4 motors at fu
 My first cut at this is to create an entirely new class [SwitecX12](https://github.com/clearwater/SwitecX25/blob/X12/SwitecX12.h)
 which duplicates the key timing code from SwitecX25, with new output logic
 and an adjusted acceleration curve.
+
+The code below zeroes the needle, moves the needle to the centre of the sweep, then
+cycles between 1/4 range and 3/4 range.
+
+{{< youtube ygrRIWR8rmY >}}
 
 ```
 #include <SwitecX12.h>
